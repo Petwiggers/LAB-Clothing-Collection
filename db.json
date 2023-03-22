@@ -20,5 +20,17 @@
       "id": 2,
       "nome": "Coleção 2"
     }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "teste1@hotmail.com",
+      "senha": "12345678"
+    },
+    {
+      "id": 1,
+      "email": "teste2@hotmail.com",
+      "senha": "87654321"
+    }
   ]
 }

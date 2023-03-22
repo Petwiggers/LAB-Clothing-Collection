@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ValidarUsuarioService } from 'src/app/servicos/validar-usuario.service';
 
 @Component({
   selector: 'app-formulario-login',
@@ -12,21 +14,40 @@ export class FormularioLoginComponent implements OnInit {
   ngOnInit(): void {
     this.criarFormulario();
   }
-  constructor(){}
+  constructor(private httpUsuario: ValidarUsuarioService, private rota: Router){}
 
   criarFormulario(){
     this.formulario = new FormGroup({
       email: new FormControl('',[Validators.required,Validators.email]),
       senha: new FormControl('',[Validators.required,Validators.minLength(8)])
-    })
+    });
   }
   OnSubmit(){
     if (!this.formulario.valid) {
-      alert('Email ou Senha Incorretos!')
+      alert('Formatação Inválida!');
       return
     }
-    console.log('Formulario Validado!!');
-    
-    console.log(this.formulario.value);
+    this.validarUsuario();
+  }
+  
+  validarUsuario(){
+    this.httpUsuario.validarUsuario().subscribe((data)=> {
+      let logado = false;
+      data.map(value => {
+        if ((value.email === this.formulario.value.email && value.senha === this.formulario.value.senha)) {
+          this.logarUsuario();
+          logado = true;
+          return
+        }
+      })
+      if (!logado) {
+        alert("Nenhum Usuario Encontrado");
+      }
+    })
+  }
+
+  logarUsuario(){
+    localStorage.setItem('logado','true');
+    this.rota.navigate(['/home']);
   }
 }

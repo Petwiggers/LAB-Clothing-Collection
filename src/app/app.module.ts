@@ -11,6 +11,8 @@ import { EsqueciSenhaComponent } from './pages/Esqueci-Senha/esqueci-senha.compo
 import { LoginComponent } from './pages/Login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FormEsqueciSenhaComponent } from './componentes/Formularios/form-esqueci-senha/form-esqueci-senha.component';
+import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
+import { FormCadastroUsuarioComponent } from './componentes/Formularios/form-cadastro-usuario/form-cadastro-usuario.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FormEsqueciSenhaComponent } from './componentes/Formularios/form-esquec
     FormularioLoginComponent,
     HomeComponent,
     FormEsqueciSenhaComponent,
+    CadastroUsuarioComponent,
+    FormCadastroUsuarioComponent,
   ],
   imports: [
     BrowserModule,

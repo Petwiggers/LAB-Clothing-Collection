@@ -9,15 +9,20 @@
     </svg></i>
     <h1 class="h3 mb-3 fw-normal">Redefinir Senha</h1>
     <div id="descricao">
-      <p>Digite o email associado à sua conta e <br> enviaremos instruções para <br> redefinir sua senha</p>
+      <p *ngIf="!submit; else emailEnviado">Digite o email associado à sua conta e <br> enviaremos instruções para <br> redefinir sua senha</p>
+      <ng-template #emailEnviado>
+        <p>Um link para redefinição de senha foi enviado <br>para o email {{formulario.value.email}}</p>
+      </ng-template>
     </div>
   
-    <div class="form-floating">
+    <div *ngIf="!submit" class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="email">
       <label for="floatingInput">Informe seu Email</label>
     </div>
 
-    <button class="w-75 btn btn-lg btn-primary" id="botao" type="submit">Redefinir Senha</button>
+    <button class="w-75 btn btn-lg btn-primary" id="botao" type="submit" *ngIf="!submit">Redefinir Senha</button>
+    <button routerLink="/login" class="w-75 btn btn-lg btn-primary" id="botao" type="submit" *ngIf="submit">Voltar Para login </button>
+
   </form>
 </div>
 

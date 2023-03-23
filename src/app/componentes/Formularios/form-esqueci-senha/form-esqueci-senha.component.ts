@@ -8,6 +8,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class FormEsqueciSenhaComponent {
   formulario!: FormGroup; 
+  submit: boolean = false;
 
   ngOnInit(): void {
     this.criarFormulario();
@@ -19,7 +20,11 @@ export class FormEsqueciSenhaComponent {
     });
   }
   OnSubmit(){
+    if (!this.formulario.valid) {
+      alert('Formato do Email Incorreto !');
+      return
+    }
+    this.submit = true;
     console.log(this.formulario.value);
-    
   }
 }

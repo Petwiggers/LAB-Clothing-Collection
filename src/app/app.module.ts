@@ -10,7 +10,7 @@ import { SimplesComponent } from './layout/Simples/simples.component';
 import { EsqueciSenhaComponent } from './pages/Esqueci-Senha/esqueci-senha.component';
 import { LoginComponent } from './pages/Login/login.component';
 import { HomeComponent } from './pages/home/home.component';
-import { FormEsqueciSenhaComponent } from './componentes/form-esqueci-senha/form-esqueci-senha.component';
+import { FormEsqueciSenhaComponent } from './componentes/Formularios/form-esqueci-senha/form-esqueci-senha.component';
 
 @NgModule({
   declarations: [

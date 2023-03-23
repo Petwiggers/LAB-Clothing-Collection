@@ -1,0 +1,45 @@
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 480px;
+  height: 407px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+#conteiner{
+  background-color: #F2F5FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: center;
+}
+
+svg{
+  position: absolute;
+  top: 60px;
+}
+
+ p ,label{
+  color: #B4B6C1;
+}
+
+.form-control{
+  width: 350px;
+}
+
+.btn-primary{
+  margin-top: 20px;
+}
+
+p{
+  cursor: pointer;
+}
+
+h1{
+  color: #304C71; 
+}

@@ -1,5 +1,8 @@
 export interface InterfaceUsuario {
-  id: number;
+  id?: number;
+  nome: string;
+  empresa: string;
+  cnpj: string;
   email: string;
   senha: string;
 }

@@ -9,7 +9,6 @@ import { CadastrarUsuarioService } from 'src/app/servicos/cadastrar-usuario.serv
 })
 export class FormCadastroUsuarioComponent {
   formulario!: FormGroup; 
-  letrasPattern = "[A-z]"
 
   constructor(private http:CadastrarUsuarioService){}
 
@@ -18,24 +17,30 @@ export class FormCadastroUsuarioComponent {
   }
 
   criarFormulario(){
+    const validadorCNPJ: string = "[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2}";
+
     this.formulario = new FormGroup({
       nome: new FormControl('',[Validators.required,Validators.minLength(7),Validators.pattern("[A-z]*")]),
       empresa: new FormControl('',[Validators.required,Validators.minLength(7),Validators.pattern("[A-z]*")]),
-      cnpj: new FormControl('',[Validators.required,Validators.minLength(14),Validators.pattern("[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2}")]),
+      cnpj: new FormControl('',[Validators.required,Validators.minLength(14),Validators.pattern(validadorCNPJ)]),
       email: new FormControl('',[Validators.required,Validators.email]),
       senha: new FormControl('',[Validators.required,Validators.minLength(8)]),
       confirmacaoSenha: new FormControl('',[Validators.required,Validators.minLength(8)])
     });
   }
   OnSubmit(){
+    const senha: string = this.formulario.value.senha;
+    const confirmacaoSenha: string = this.formulario.value.confirmacaoSenha;
+
     if (!this.formulario.valid) {
       console.log(this.formulario);
-      
-      alert('Ouve algum erro de validação nos dados')
+      alert('Ouve algum erro de validação nos dados de seu Formulário !')
+      return
+    }else if (!(senha === confirmacaoSenha)) {
+      alert("Você não Digitou a mesma senha!");
       return
     }
-    this.adicionarUsuario()
-    console.log(this.formulario.value);
+    this.adicionarUsuario();
     this.criarFormulario();
   }
 

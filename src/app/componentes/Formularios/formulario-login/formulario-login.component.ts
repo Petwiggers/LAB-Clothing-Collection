@@ -31,10 +31,12 @@ export class FormularioLoginComponent implements OnInit {
   }
   
   validarUsuario(){
+    const email: string = this.formulario.value.email;
+    const senha: string = this.formulario.value.senha;
     this.httpUsuario.validarUsuario().subscribe((data)=> {
       let logado = false;
       data.map(value => {
-        if ((value.email === this.formulario.value.email && value.senha === this.formulario.value.senha)) {
+        if ((value.email === email && value.senha === senha)) {
           this.logarUsuario();
           logado = true;
           return

@@ -13,6 +13,7 @@ import { FormEsqueciSenhaComponent } from './componentes/Formularios/form-esquec
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
 import { FormCadastroUsuarioComponent } from './componentes/Formularios/form-cadastro-usuario/form-cadastro-usuario.component';
 import { CompletoComponent } from './layout/completo/completo.component';
+import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CompletoComponent } from './layout/completo/completo.component';
     CadastroUsuarioComponent,
     FormCadastroUsuarioComponent,
     CompletoComponent,
+    MenuLateralComponent,
   ],
   imports: [
     BrowserModule,

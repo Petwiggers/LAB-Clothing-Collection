@@ -5,6 +5,7 @@ import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usua
 import { EsqueciSenhaComponent } from './pages/Esqueci-Senha/esqueci-senha.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/Login/login.component';
+import { GuardHomeGuard } from './servicos/guard-home.guard';
 
 
 const routes: Routes = [
@@ -14,7 +15,7 @@ const routes: Routes = [
     {path: 'EsqueciSenha', component: EsqueciSenhaComponent},
     {path: 'CadastroUsuario', component: CadastroUsuarioComponent}
   ]},
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: HomeComponent, canActivate : [GuardHomeGuard]}
 ];
 
 @NgModule({

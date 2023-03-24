@@ -25,6 +25,5 @@ export class FormEsqueciSenhaComponent {
       return
     }
     this.submit = true;
-    console.log(this.formulario.value);
   }
 }

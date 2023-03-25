@@ -15,6 +15,7 @@ import { FormCadastroUsuarioComponent } from './componentes/Formularios/form-cad
 import { CompletoComponent } from './layout/completo/completo.component';
 import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.component';
 import { HeaderComponent } from './componentes/header/header.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HeaderComponent } from './componentes/header/header.component';
     CompletoComponent,
     MenuLateralComponent,
     HeaderComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

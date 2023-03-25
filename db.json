@@ -3,22 +3,40 @@
     {
       "id": 1,
       "nome": "Modelo 1",
-      "colecao": 1
+      "tipoModelo":"Shorts",
+      "colecao": 1,
+      "responsavel":"Yan",
+      "bordado":"true",
+      "estampa":"true"
     },
     {
       "id": 2,
       "nome": "Modelo 2",
-      "colecao": 1
-    }
+      "tipoModelo":"Shorts",
+      "colecao": 1,
+      "responsavel":"Yan",
+      "bordado":"true",
+      "estampa":"true"
+    } 
   ],
   "colecoes": [
     {
       "id": 1,
-      "nome": "Coleção 1"
+      "nome": "Coleção 1",
+      "responsavel":"Peterson Wiggers",
+      "estacao": "Outono",
+      "marca": "Adidas",
+      "orcamento": "10000",
+      "anoLancamento":"2022"
     },
     {
       "id": 2,
-      "nome": "Coleção 2"
+      "nome": "Coleção 2",
+      "responsavel":"Peterson Wiggers",
+      "estacao": "Outono",
+      "marca": "Umbro",
+      "orcamento": "10000",
+      "anoLancamento":"2022"
     }
   ],
   "usuarios": [

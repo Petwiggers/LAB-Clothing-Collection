@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompletoComponent } from './layout/completo/completo.component';
 import { SimplesComponent } from './layout/Simples/simples.component';
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { EsqueciSenhaComponent } from './pages/Esqueci-Senha/esqueci-senha.component';
 import { LoginComponent } from './pages/Login/login.component';
 import { GuardHomeGuard } from './servicos/guard-home.guard';
@@ -15,7 +16,12 @@ const routes: Routes = [
     {path: 'EsqueciSenha', component: EsqueciSenhaComponent},
     {path: 'CadastroUsuario', component: CadastroUsuarioComponent}
   ]},
-  {path: 'home', component: CompletoComponent, canActivate : [GuardHomeGuard]}
+  {path: 'home', component: CompletoComponent, canActivate : [GuardHomeGuard],children: [
+    {path:'Dashboard', component: DashboardComponent}
+  ]}
+  // {path: '', redirectTo: 'Dashboard',pathMatch: 'full'},
+  // {path: 'Dashboard',component: DashboardComponent}
+
 ];
 
 @NgModule({

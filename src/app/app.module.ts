@@ -16,6 +16,7 @@ import { CompletoComponent } from './layout/completo/completo.component';
 import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ColecoesComponent } from './componentes/Cards/colecoes/colecoes.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     MenuLateralComponent,
     HeaderComponent,
     DashboardComponent,
+    ColecoesComponent,
   ],
   imports: [
     BrowserModule,

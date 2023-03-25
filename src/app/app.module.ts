@@ -14,6 +14,7 @@ import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usua
 import { FormCadastroUsuarioComponent } from './componentes/Formularios/form-cadastro-usuario/form-cadastro-usuario.component';
 import { CompletoComponent } from './layout/completo/completo.component';
 import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.component';
+import { HeaderComponent } from './componentes/header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.co
     FormCadastroUsuarioComponent,
     CompletoComponent,
     MenuLateralComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

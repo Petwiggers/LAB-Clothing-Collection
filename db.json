@@ -24,19 +24,11 @@
   "usuarios": [
     {
       "nome": "Peterson",
-      "empresa": "Aldaces",
+      "empresa": "Audaces",
       "cnpj": "00.394.460/0058-87",
       "email": "peterson@wiggers.com",
       "senha": "pw150604",
       "id": 1
-    },
-    {
-      "nome": "Dejacir",
-      "empresa": "Berneck",
-      "cnpj": "00.394.460/0058-87",
-      "email": "peterson@wiggers.com",
-      "senha": "pw150604",
-      "id": 2
     }
   ]
 }

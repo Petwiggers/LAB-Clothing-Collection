@@ -4,6 +4,6 @@ export interface Colecoes {
   responsavel: string;
   estacao: string;
   marca: string;
-  orcamento: string;
+  orcamento: number;
   anoLancamento:string;
 }

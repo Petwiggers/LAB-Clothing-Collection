@@ -26,7 +26,7 @@
       "responsavel": "Peterson Wiggers",
       "estacao": "Outono",
       "marca": "Adidas",
-      "orcamento": "10000",
+      "orcamento": 5000,
       "anoLancamento": "2022"
     },
     {
@@ -35,7 +35,7 @@
       "responsavel": "Peterson Wiggers",
       "estacao": "Outono",
       "marca": "Umbro",
-      "orcamento": "10000",
+      "orcamento": 10000,
       "anoLancamento": "2022"
     }
   ],

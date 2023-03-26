@@ -17,6 +17,8 @@ import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.co
 import { HeaderComponent } from './componentes/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ColecoesComponent } from './componentes/Cards/colecoes/colecoes.component';
+import { ModelosComponent } from './componentes/Cards/modelos/modelos.component';
+import { OrcamentoMedioComponent } from './componentes/Cards/orcamento-medio/orcamento-medio.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { ColecoesComponent } from './componentes/Cards/colecoes/colecoes.compone
     HeaderComponent,
     DashboardComponent,
     ColecoesComponent,
+    ModelosComponent,
+    OrcamentoMedioComponent,
   ],
   imports: [
     BrowserModule,

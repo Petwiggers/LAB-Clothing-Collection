@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit } from '@angular/core';import { GetColecoesService } from 'src/app/servicos/get-colecoes.service';
+
+
 
 @Component({
   selector: 'app-colecoes',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./colecoes.component.scss']
 })
 export class ColecoesComponent implements OnInit{
+  numeroColecoes!: number ;
 
   ngOnInit(): void {
-    
+    this.pegarColecoes();
   }
-  constructor(){}
+  constructor(private http: GetColecoesService){}
+
+  pegarColecoes(){
+    this.http.getColecoes().subscribe((retorno => {
+      this.numeroColecoes = retorno.length;
+    }))
+  }
+ 
 
 }

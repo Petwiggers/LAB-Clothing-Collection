@@ -6,8 +6,8 @@
       "tipoModelo": "Shorts",
       "colecao": 1,
       "responsavel": "Yan",
-      "bordado": "true",
-      "estampa": "true"
+      "bordado": true,
+      "estampa": true
     },
     {
       "id": 2,
@@ -15,8 +15,8 @@
       "tipoModelo": "Shorts",
       "colecao": 1,
       "responsavel": "Yan",
-      "bordado": "true",
-      "estampa": "true"
+      "bordado": true,
+      "estampa": true
     }
   ],
   "colecoes": [

@@ -24,7 +24,7 @@ export class FormularioLoginComponent implements OnInit {
   }
   OnSubmit(){
     if (!this.formulario.valid) {
-      alert('Formatação Inválida!');
+      alert('Email ou Senha Incorretos!');
       return
     }
     this.validarUsuario();

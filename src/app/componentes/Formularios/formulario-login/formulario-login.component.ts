@@ -50,6 +50,6 @@ export class FormularioLoginComponent implements OnInit {
 
   logarUsuario(){
     localStorage.setItem('logado','true');
-    this.rota.navigate(['/home']);
+    this.rota.navigate(['/home/Dashboard']);
   }
 }

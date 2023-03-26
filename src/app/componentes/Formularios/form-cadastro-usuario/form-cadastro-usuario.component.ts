@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CadastrarUsuarioService } from 'src/app/servicos/cadastrar-usuario.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { CadastrarUsuarioService } from 'src/app/servicos/cadastrar-usuario.serv
 export class FormCadastroUsuarioComponent {
   formulario!: FormGroup; 
 
-  constructor(private http:CadastrarUsuarioService){}
+  constructor(private http:CadastrarUsuarioService, private rota: Router){}
 
   ngOnInit(): void {
     this.criarFormulario();
@@ -55,5 +56,6 @@ export class FormCadastroUsuarioComponent {
     this.http.adicionarUsuario(usuario).subscribe(resultado => {
       console.log(resultado);
     });
+    this.rota.navigate(['/Login'])
   }
 }

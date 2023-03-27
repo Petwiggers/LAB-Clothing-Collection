@@ -22,21 +22,57 @@
   "colecoes": [
     {
       "id": 1,
-      "nome": "Coleção 1",
+      "nome": "Marcando a Regatinha",
       "responsavel": "Peterson Wiggers",
-      "estacao": "Outono",
-      "marca": "Adidas",
+      "estacao": "Verão",
+      "marca": "Nike",
       "orcamento": 5000,
-      "anoLancamento": "2022"
+      "anoLancamento": "2000"
     },
     {
       "id": 2,
-      "nome": "Coleção 2",
-      "responsavel": "Peterson Wiggers",
-      "estacao": "Outono",
+      "nome": "Congelou",
+      "responsavel": "Raphael Aguiar",
+      "estacao": "Inverno",
       "marca": "Umbro",
       "orcamento": 10000,
-      "anoLancamento": "2022"
+      "anoLancamento": "2018"
+    },
+    {
+      "id": 3,
+      "nome": "Primavera Verão",
+      "responsavel": "Alisson Vendolin",
+      "estacao": "Primavera",
+      "marca": "Adidas",
+      "orcamento": 82000,
+      "anoLancamento": "2019"
+    },
+    {
+      "id": 4,
+      "nome": "Prainha e Água de Côco",
+      "responsavel": "Leticia Carbonera",
+      "estacao": "Primavera",
+      "marca": "High",
+      "orcamento": 43702,
+      "anoLancamento": "2019"
+    },
+    {
+      "id": 5,
+      "nome": "Muito Chimarrão e Lenha",
+      "responsavel": "João da Silva",
+      "estacao": "Inverno",
+      "marca": "D&G",
+      "orcamento": 21024,
+      "anoLancamento": "2015"
+    },
+    {
+      "id": 6,
+      "nome": "Aventura",
+      "responsavel": "Inácio Albuquerque",
+      "estacao": "Primavera",
+      "marca": "D&G",
+      "orcamento": 21024,
+      "anoLancamento": "2015"
     }
   ],
   "usuarios": [

@@ -19,6 +19,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ColecoesComponent } from './componentes/Cards/colecoes/colecoes.component';
 import { ModelosComponent } from './componentes/Cards/modelos/modelos.component';
 import { OrcamentoMedioComponent } from './componentes/Cards/orcamento-medio/orcamento-medio.component';
+import { TabelaDashboardComponent } from './componentes/Tabelas/tabela-dashboard/tabela-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { OrcamentoMedioComponent } from './componentes/Cards/orcamento-medio/orc
     ColecoesComponent,
     ModelosComponent,
     OrcamentoMedioComponent,
+    TabelaDashboardComponent,
   ],
   imports: [
     BrowserModule,

@@ -28,5 +28,6 @@ export class OrcamentoMedioComponent implements OnInit{
         somaOrcamento += colecao.orcamento;
       });
       this.mediaOrcamento = somaOrcamento/arrayColecao.length;
+      this.mediaOrcamento = Math.round(this.mediaOrcamento);
   }
 }

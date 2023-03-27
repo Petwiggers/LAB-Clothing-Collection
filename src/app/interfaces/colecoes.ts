@@ -1,3 +1,5 @@
+import { Modelos } from "./modelos";
+
 export interface Colecoes {
   id?: number;
   nome: string;
@@ -6,4 +8,5 @@ export interface Colecoes {
   marca: string;
   orcamento: number;
   anoLancamento:string;
+  modelos:Modelos[];
 }

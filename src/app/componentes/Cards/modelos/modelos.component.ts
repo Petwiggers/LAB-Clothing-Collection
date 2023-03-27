@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GetModelosService } from 'src/app/servicos/get-modelos.service';
+import { GetColecoesService } from 'src/app/servicos/get-colecoes.service';
 
 @Component({
   selector: 'app-modelos',
@@ -7,16 +7,20 @@ import { GetModelosService } from 'src/app/servicos/get-modelos.service';
   styleUrls: ['./modelos.component.scss']
 })
 export class ModelosComponent {
-  numeroModelos!: number ;
+  numeroModelos: number = 0 ;
 
   ngOnInit(): void {
     this.pegarColecoes();
   }
-  constructor(private http: GetModelosService){}
+  constructor(private http: GetColecoesService){}
 
   pegarColecoes(){
     this.http.getColecoes().subscribe((retorno => {
-      this.numeroModelos = retorno.length;
+      retorno.map((valor) => {
+        if (valor.modelos) {
+          this.numeroModelos += valor.modelos.length;
+        }
+      })
     }))
   }
  

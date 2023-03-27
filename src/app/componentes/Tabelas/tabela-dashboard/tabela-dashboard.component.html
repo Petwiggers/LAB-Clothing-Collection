@@ -13,7 +13,7 @@
       <tr *ngFor="let colecao of maioresOrcamentos">
         <th>{{colecao.nome}}</th>
         <td>{{colecao.responsavel}}</td>
-        <td>Modelos</td>
+        <td>{{colecao.modelos.length}}</td>
         <td>{{colecao.orcamento}}</td>
       </tr>
     </tbody>

@@ -31,26 +31,12 @@ export class TabelaDashboardComponent {
           }
         });
         this.maioresOrcamentos.push(colecoes[indexMaiorNumero]);
-        console.log('Maiores Orçamentos '+this.maioresOrcamentos);
+        // console.log('Maiores Orçamentos '+this.maioresOrcamentos);
         colecoes.splice(indexMaiorNumero,1);
-        console.log('Coleções: '+colecoes);
+        // console.log('Coleções: '+colecoes);
         
       }
-      
-      // const sumWithInitial = array1.reduce(
-      //   (accumulator, currentValue) => accumulator + currentValue,
-      //   initialValue
-      // );
     });
   }
 
-  // adicionarOrcamentos(colecoes: Colecoes[]){
-  //   let orcamentos: number[];
-  //   colecoes.forEach((colecao) => {
-  //     let orcamentoColecao = colecao.orcamento;
-  //     orcamentos.push(orcamentoColecao);
-  //     console.log(orcamentoColecao);
-  //   });
-  //   return this.orcamentos;
-  // }
 }

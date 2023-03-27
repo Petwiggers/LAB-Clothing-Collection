@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';import { GetColecoesService } 
   templateUrl: './colecoes.component.html',
   styleUrls: ['./colecoes.component.scss']
 })
-export class ColecoesComponent implements OnInit{
+export class CardColecoesComponent implements OnInit{
   numeroColecoes!: number ;
 
   ngOnInit(): void {

@@ -15,11 +15,16 @@ import { FormCadastroUsuarioComponent } from './componentes/Formularios/form-cad
 import { CompletoComponent } from './layout/completo/completo.component';
 import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.component';
 import { HeaderComponent } from './componentes/header/header.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ColecoesComponent } from './componentes/Cards/colecoes/colecoes.component';
+
 import { ModelosComponent } from './componentes/Cards/modelos/modelos.component';
 import { OrcamentoMedioComponent } from './componentes/Cards/orcamento-medio/orcamento-medio.component';
 import { TabelaDashboardComponent } from './componentes/Tabelas/tabela-dashboard/tabela-dashboard.component';
+import { TabelaColecaoComponent } from './componentes/Tabelas/tabela-colecao/tabela-colecao.component';
+import { CardColecoesComponent } from './componentes/Cards/colecoes/colecoes.component';
+
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { PaginaColecoesComponent } from './pages/pagina-colecoes/pagina-colecoes.component';
+
 
 @NgModule({
   declarations: [
@@ -35,10 +40,12 @@ import { TabelaDashboardComponent } from './componentes/Tabelas/tabela-dashboard
     MenuLateralComponent,
     HeaderComponent,
     DashboardComponent,
-    ColecoesComponent,
+    CardColecoesComponent,
     ModelosComponent,
     OrcamentoMedioComponent,
     TabelaDashboardComponent,
+    TabelaColecaoComponent,
+    PaginaColecoesComponent,
   ],
   imports: [
     BrowserModule,

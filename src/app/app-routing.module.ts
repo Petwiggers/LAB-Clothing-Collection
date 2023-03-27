@@ -6,6 +6,7 @@ import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usua
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { EsqueciSenhaComponent } from './pages/Esqueci-Senha/esqueci-senha.component';
 import { LoginComponent } from './pages/Login/login.component';
+import { PaginaColecoesComponent } from './pages/pagina-colecoes/pagina-colecoes.component';
 import { GuardHomeGuard } from './servicos/guard-home.guard';
 
 
@@ -17,7 +18,8 @@ const routes: Routes = [
     {path: 'CadastroUsuario', component: CadastroUsuarioComponent}
   ]},
   {path: 'home', component: CompletoComponent, canActivate : [GuardHomeGuard],children: [
-    {path:'Dashboard', component: DashboardComponent}
+    {path:'Dashboard', component: DashboardComponent},
+    {path:'Colecoes',component: PaginaColecoesComponent}
   ]}
   // {path: '', redirectTo: 'Dashboard',pathMatch: 'full'},
   // {path: 'Dashboard',component: DashboardComponent}

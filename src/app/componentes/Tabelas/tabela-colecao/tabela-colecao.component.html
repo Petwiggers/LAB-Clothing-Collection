@@ -1,0 +1,24 @@
+<div id="conteiner">
+  <h2>Coleções</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Coleção</th>
+        <th scope="col">Responsável</th>
+        <th scope="col">Estação - Lançamento</th>
+        <th scope="col">Modelos</th>
+        <th scope="col">Orçamento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let colecao of colecoes">
+        <th>{{colecao.nome}}</th>
+        <td>{{colecao.responsavel}}</td>
+        <td>{{colecao.estacao}} {{colecao.anoLancamento}}</td>
+        <td>{{colecao.modelos.length}}</td>
+        <td>{{colecao.orcamento}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

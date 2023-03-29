@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Colecoes } from 'src/app/interfaces/colecoes';
+import { Modelos } from 'src/app/interfaces/modelos';
 import { ColecoesService } from 'src/app/servicos/colecoes.service';
+import { ModelosService } from 'src/app/servicos/modelos.service';
 
 
 @Component({
@@ -10,16 +12,26 @@ import { ColecoesService } from 'src/app/servicos/colecoes.service';
 })
 export class TabelaDashboardComponent {
   maioresOrcamentos: Colecoes[] = [];
-  orcamentos!: number[];
+  colecoesModificadas: any[] = [];
+  modelos!:Modelos[]|undefined;
+  colecoes!: any;
 
   ngOnInit() {
-   this.getColecoes();
+    this.pegarValores();
   }
 
-  constructor(private http:ColecoesService){}
+  constructor(private httpColecoes:ColecoesService,private httpModelos: ModelosService ){}
 
- getColecoes(){
-    this.http.getColecoes().subscribe((colecoes) => {
+  
+    async pegarValores(){
+      this.colecoes = await this.httpColecoes.getColecoes().toPromise()
+      this.modelos = await this.httpModelos.getModelos().toPromise()
+      this.pegarMaioresOrcamentos()
+    }
+  
+
+  pegarMaioresOrcamentos(){
+     this.httpColecoes.getColecoes().subscribe((colecoes) => {
       for (let index = 0; index < 5; index++) {
         let maiorNumero: number = 0;
         let indexMaiorNumero: number = 0;
@@ -32,7 +44,20 @@ export class TabelaDashboardComponent {
         this.maioresOrcamentos.push(colecoes[indexMaiorNumero]);
         colecoes.splice(indexMaiorNumero,1);
       }
+      this.filtrarModelos();
     });
+  }
+  filtrarModelos(){
+    if (this.modelos) {
+      for(let i = 0; i < this.maioresOrcamentos.length; i++){
+        const modelosColecao = this.modelos.filter((q:Modelos) => q.colecao === this.maioresOrcamentos[i].id)
+        const objeto = {
+          ...this.maioresOrcamentos[i],
+          quantidadeModelos: modelosColecao.length
+        }
+        this.colecoesModificadas.push(objeto);
+      } 
+    }
   }
 
 }

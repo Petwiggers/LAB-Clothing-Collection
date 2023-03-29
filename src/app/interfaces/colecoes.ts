@@ -8,5 +8,4 @@ export interface Colecoes {
   marca: string;
   orcamento: number;
   anoLancamento:string;
-  modelos:Modelos[];
 }

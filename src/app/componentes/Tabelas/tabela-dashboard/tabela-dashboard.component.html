@@ -10,10 +10,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let colecao of maioresOrcamentos">
+      <tr *ngFor="let colecao of colecoesModificadas">
         <th>{{colecao.nome}}</th>
         <td>{{colecao.responsavel}}</td>
-        <td>{{colecao.modelos.length}}</td>
+        <td>{{colecao.quantidadeModelos}}</td>
         <td>{{colecao.orcamento}}</td>
       </tr>
     </tbody>

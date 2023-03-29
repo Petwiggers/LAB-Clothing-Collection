@@ -7,36 +7,7 @@
       "estacao": "Verão",
       "marca": "Nike",
       "orcamento": 100000,
-      "anoLancamento": "2000",
-      "modelos": [
-        {
-          "id": 1,
-          "nome": "Modelo 1",
-          "tipoModelo": "Shorts",
-          "colecao": 1,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        },
-        {
-          "id": 2,
-          "nome": "Rodeio",
-          "tipoModelo": "Botas",
-          "colecao": 1,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        },
-        {
-          "id": 3,
-          "nome": "Rodeio",
-          "tipoModelo": "Calça",
-          "colecao": 1,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        }
-      ]
+      "anoLancamento": "2000"
     },
     {
       "id": 2,
@@ -45,27 +16,7 @@
       "estacao": "Inverno",
       "marca": "Umbro",
       "orcamento": 10000,
-      "anoLancamento": "2018",
-      "modelos": [
-        {
-          "id": 1,
-          "nome": "Modelo 1",
-          "tipoModelo": "Shorts",
-          "colecao": 1,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        },
-        {
-          "id": 2,
-          "nome": "Rodeio",
-          "tipoModelo": "Botas",
-          "colecao": 1,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        }
-      ]
+      "anoLancamento": "2018"
     },
     {
       "id": 3,
@@ -74,27 +25,7 @@
       "estacao": "Primavera",
       "marca": "Adidas",
       "orcamento": 82000,
-      "anoLancamento": "2019",
-      "modelos": [
-        {
-          "id": 1,
-          "nome": "Modelo 1",
-          "tipoModelo": "Shorts",
-          "colecao": 1,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        },
-        {
-          "id": 2,
-          "nome": "Rodeio",
-          "tipoModelo": "Botas",
-          "colecao": 1,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        }
-      ]
+      "anoLancamento": "2019"
     },
     {
       "id": 4,
@@ -103,27 +34,7 @@
       "estacao": "Primavera",
       "marca": "High",
       "orcamento": 43702,
-      "anoLancamento": "2019",
-      "modelos": [
-        {
-          "id": 1,
-          "nome": "Modelo 1",
-          "tipoModelo": "Shorts",
-          "colecao": 4,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        },
-        {
-          "id": 2,
-          "nome": "Rodeio",
-          "tipoModelo": "Botas",
-          "colecao": 4,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        }
-      ]
+      "anoLancamento": "2019"
     },
     {
       "id": 5,
@@ -132,27 +43,7 @@
       "estacao": "Inverno",
       "marca": "D&G",
       "orcamento": 25000,
-      "anoLancamento": "2015",
-      "modelos": [
-        {
-          "id": 1,
-          "nome": "Modelo 1",
-          "tipoModelo": "Shorts",
-          "colecao": 5,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        },
-        {
-          "id": 2,
-          "nome": "Rodeio",
-          "tipoModelo": "Botas",
-          "colecao": 5,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        }
-      ]
+      "anoLancamento": "2015"
     },
     {
       "id": 6,
@@ -160,28 +51,8 @@
       "responsavel": "Inácio Albuquerque",
       "estacao": "Primavera",
       "marca": "D&G",
-      "orcamento": 200000,
-      "anoLancamento": "2015",
-      "modelos": [
-        {
-          "id": 1,
-          "nome": "Modelo 1",
-          "tipoModelo": "Shorts",
-          "colecao": 6,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        },
-        {
-          "id": 2,
-          "nome": "Rodeio",
-          "tipoModelo": "Botas",
-          "colecao": 6,
-          "responsavel": "Yan",
-          "bordado": true,
-          "estampa": true
-        }
-      ]
+      "orcamento": 90000,
+      "anoLancamento": "2015"
     }
   ],
   "usuarios": [
@@ -262,7 +133,7 @@
       "id": 8,
       "nome": "Rodeio",
       "tipoModelo": "Botas",
-      "colecao": 1,
+      "colecao": 3,
       "responsavel": "Yan",
       "bordado": true,
       "estampa": true
@@ -271,7 +142,7 @@
       "id": 9,
       "nome": "Modelo 1",
       "tipoModelo": "Shorts",
-      "colecao": 1,
+      "colecao": 3,
       "responsavel": "Yan",
       "bordado": true,
       "estampa": true

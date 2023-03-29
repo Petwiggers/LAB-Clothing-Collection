@@ -14,4 +14,8 @@ export class ColecoesService {
   getColecoes():Observable<Colecoes[]>{
     return this.http.get<Colecoes[]>(`${this.urlBAse}/colecoes`);
   }
+
+  postColecao(colecao: Colecoes): Observable<Colecoes> {
+    return this.http.post<Colecoes>(`${this.urlBAse}/colecoes`, colecao);
+  }
 }

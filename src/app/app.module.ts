@@ -20,14 +20,12 @@ import { TabelaDashboardComponent } from './componentes/Tabelas/tabela-dashboard
 import { TabelaColecaoComponent } from './componentes/Tabelas/tabela-colecao/tabela-colecao.component';
 import { CardColecoesComponent } from './componentes/Cards/colecoes/colecoes.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { CadastroColecoesComponent } from './componentes/Formularios/cadastro-colecoes/cadastro-colecoes.component';
 import { PaginaColecoesComponent } from './pages/Coleções/pagina-colecoes/pagina-colecoes.component';
 import { PageCadastroColecoesComponent } from './pages/Coleções/page-cadastro-colecoes/page-cadastro-colecoes.component';
-import { EditarColecoesComponent } from './componentes/Formularios/editar-colecoes/editar-colecoes.component';
 import { PageEditarColecoesComponent } from './pages/Coleções/editar-colecoes/editar-colecoes.component';
 import { PaginaModelosComponent } from './pages/Modelos/pagina-modelos/pagina-modelos.component';
-
-
+import { CadastroColecoesComponent } from './componentes/Formularios/Coleções/cadastro-colecoes/cadastro-colecoes.component';
+import { EditarColecoesComponent } from './componentes/Formularios/Coleções/editar-colecoes/editar-colecoes.component';
 
 
 @NgModule({

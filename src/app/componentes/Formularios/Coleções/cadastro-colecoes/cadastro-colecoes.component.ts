@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ColecoesService } from 'src/app/servicos/colecoes.service';
 
 @Component({
   selector: 'app-cadastro-colecoes',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class CadastroColecoesComponent implements OnInit{
   formulario!: FormGroup; 
 
-  constructor(private rota: Router){}
+  constructor(private rota: Router, private http: ColecoesService){}
   ngOnInit(): void {
     this.criarFormulario();
   }
@@ -28,13 +29,17 @@ export class CadastroColecoesComponent implements OnInit{
 
   OnSubmit(){
     if (!this.formulario.valid) {
-      console.log(this.formulario);
-      console.log(this.formulario.valid);
       alert('Ouve algum erro de validação nos dados de seu Formulário !')
       return
     }
-    console.log(this.formulario.value);
+    this.cadastrarColecao();
     this.criarFormulario();
+  }
+
+  cadastrarColecao(){
+    this.http.postColecao(this.formulario.value).toPromise();
+    console.log("fez a requizição");
+    
   }
 
   retornarListagem(){

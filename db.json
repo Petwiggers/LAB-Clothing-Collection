@@ -53,6 +53,15 @@
       "marca": "D&G",
       "orcamento": 90000,
       "anoLancamento": "2015"
+    },
+    {
+      "nome": "Coleção Nova",
+      "responsavel": "Peterson",
+      "estacao": "Outono",
+      "marca": "Adidas",
+      "orcamento": 40000,
+      "anoLancamento": 2023,
+      "id": 7
     }
   ],
   "usuarios": [

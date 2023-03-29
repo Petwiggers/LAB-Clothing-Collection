@@ -2,11 +2,11 @@
   "colecoes": [
     {
       "id": 1,
-      "nome": "Marcando a Regatinha",
+      "nome": "Moda para Inverno",
       "responsavel": "Peterson Wiggers",
       "estacao": "Verão",
       "marca": "Nike",
-      "orcamento": 5000,
+      "orcamento": 100000,
       "anoLancamento": "2000",
       "modelos": [
         {
@@ -40,7 +40,7 @@
     },
     {
       "id": 2,
-      "nome": "Congelou",
+      "nome": "Moda Esportiva",
       "responsavel": "Raphael Aguiar",
       "estacao": "Inverno",
       "marca": "Umbro",
@@ -98,7 +98,7 @@
     },
     {
       "id": 4,
-      "nome": "Prainha e Água de Côco",
+      "nome": "Coleção Verão",
       "responsavel": "Leticia Carbonera",
       "estacao": "Primavera",
       "marca": "High",
@@ -127,11 +127,11 @@
     },
     {
       "id": 5,
-      "nome": "Muito Chimarrão e Lenha",
+      "nome": "Moda Gaúcha",
       "responsavel": "João da Silva",
       "estacao": "Inverno",
       "marca": "D&G",
-      "orcamento": 21024,
+      "orcamento": 25000,
       "anoLancamento": "2015",
       "modelos": [
         {
@@ -160,7 +160,7 @@
       "responsavel": "Inácio Albuquerque",
       "estacao": "Primavera",
       "marca": "D&G",
-      "orcamento": 21024,
+      "orcamento": 200000,
       "anoLancamento": "2015",
       "modelos": [
         {
@@ -187,11 +187,130 @@
   "usuarios": [
     {
       "nome": "Peterson",
-      "empresa": "Audaces",
+      "empresa": "Aldaces",
       "cnpj": "00.394.460/0058-87",
       "email": "peterson@wiggers.com",
       "senha": "pw150604",
       "id": 1
+    }
+  ],
+  "models": [
+    {
+      "id": 1,
+      "nome": "Modelo 1",
+      "tipoModelo": "Shorts",
+      "colecao": 6,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 2,
+      "nome": "Rodeio",
+      "tipoModelo": "Botas",
+      "colecao": 6,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 3,
+      "nome": "Modelo 1",
+      "tipoModelo": "Shorts",
+      "colecao": 5,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 4,
+      "nome": "Rodeio",
+      "tipoModelo": "Botas",
+      "colecao": 5,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 5,
+      "nome": "Modelo 1",
+      "tipoModelo": "Shorts",
+      "colecao": 4,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 6,
+      "nome": "Rodeio",
+      "tipoModelo": "Botas",
+      "colecao": 4,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 7,
+      "nome": "Modelo 1",
+      "tipoModelo": "Shorts",
+      "colecao": 1,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 8,
+      "nome": "Rodeio",
+      "tipoModelo": "Botas",
+      "colecao": 1,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 9,
+      "nome": "Modelo 1",
+      "tipoModelo": "Shorts",
+      "colecao": 1,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 10,
+      "nome": "Rodeio",
+      "tipoModelo": "Botas",
+      "colecao": 1,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 11,
+      "nome": "Modelo 1",
+      "tipoModelo": "Shorts",
+      "colecao": 1,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 12,
+      "nome": "Rodeio",
+      "tipoModelo": "Botas",
+      "colecao": 1,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
+    },
+    {
+      "id": 13,
+      "nome": "Rodeio",
+      "tipoModelo": "Calça",
+      "colecao": 1,
+      "responsavel": "Yan",
+      "bordado": true,
+      "estampa": true
     }
   ]
 }

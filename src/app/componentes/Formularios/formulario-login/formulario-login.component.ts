@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ValidarUsuarioService } from 'src/app/servicos/validar-usuario.service';
+import { UserService } from 'src/app/servicos/user.service';
+
 
 @Component({
   selector: 'app-formulario-login',
@@ -14,7 +15,7 @@ export class FormularioLoginComponent implements OnInit {
   ngOnInit(): void {
     this.criarFormulario();
   }
-  constructor(private httpUsuario: ValidarUsuarioService, private rota: Router){}
+  constructor(private httpUsuario: UserService, private rota: Router){}
 
   criarFormulario(){
     this.formulario = new FormGroup({
@@ -33,7 +34,7 @@ export class FormularioLoginComponent implements OnInit {
   validarUsuario(){
     const email: string = this.formulario.value.email;
     const senha: string = this.formulario.value.senha;
-    this.httpUsuario.validarUsuario().subscribe((data)=> {
+    this.httpUsuario.getUsuario().subscribe((data)=> {
       let logado = false;
       data.map(value => {
         if ((value.email === email && value.senha === senha)) {

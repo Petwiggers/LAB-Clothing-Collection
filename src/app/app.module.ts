@@ -25,6 +25,7 @@ import { PaginaColecoesComponent } from './pages/Coleções/pagina-colecoes/pagi
 import { PageCadastroColecoesComponent } from './pages/Coleções/page-cadastro-colecoes/page-cadastro-colecoes.component';
 import { EditarColecoesComponent } from './componentes/Formularios/editar-colecoes/editar-colecoes.component';
 import { PageEditarColecoesComponent } from './pages/Coleções/editar-colecoes/editar-colecoes.component';
+import { PaginaModelosComponent } from './pages/Modelos/pagina-modelos/pagina-modelos.component';
 
 
 
@@ -52,7 +53,8 @@ import { PageEditarColecoesComponent } from './pages/Coleções/editar-colecoes/
     CadastroColecoesComponent,
     PageCadastroColecoesComponent,
     EditarColecoesComponent,
-    PageEditarColecoesComponent
+    PageEditarColecoesComponent,
+    PaginaModelosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Colecoes } from 'src/app/interfaces/colecoes';
-import { GetColecoesService } from 'src/app/servicos/get-colecoes.service';
+import { ColecoesService } from 'src/app/servicos/colecoes.service';
 
 @Component({
   selector: 'app-orcamento-medio',
@@ -14,7 +14,7 @@ export class OrcamentoMedioComponent implements OnInit{
     this.GetColecoesService();
   }
 
-  constructor(private http: GetColecoesService){}
+  constructor(private http: ColecoesService){}
 
   GetColecoesService(){
     this.http.getColecoes().subscribe((resultado) => {

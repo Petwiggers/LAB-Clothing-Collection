@@ -1,7 +1,4 @@
-
-import { Component, OnInit } from '@angular/core';import { GetColecoesService } from 'src/app/servicos/get-colecoes.service';
-
-
+import { Component, OnInit } from '@angular/core';import { ColecoesService } from 'src/app/servicos/colecoes.service';
 
 @Component({
   selector: 'app-colecoes',
@@ -14,7 +11,7 @@ export class CardColecoesComponent implements OnInit{
   ngOnInit(): void {
     this.pegarColecoes();
   }
-  constructor(private http: GetColecoesService){}
+  constructor(private http: ColecoesService){}
 
   pegarColecoes(){
     this.http.getColecoes().subscribe((retorno => {

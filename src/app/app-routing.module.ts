@@ -9,6 +9,7 @@ import { PaginaColecoesComponent } from './pages/Coleções/pagina-colecoes/pagi
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { EsqueciSenhaComponent } from './pages/Esqueci-Senha/esqueci-senha.component';
 import { LoginComponent } from './pages/Login/login.component';
+import { PaginaModelosComponent } from './pages/Modelos/pagina-modelos/pagina-modelos.component';
 import { GuardHomeGuard } from './servicos/guard-home.guard';
 
 
@@ -23,7 +24,8 @@ const routes: Routes = [
     {path:'Dashboard', component: DashboardComponent},
     {path:'Colecoes',component: PaginaColecoesComponent},
     {path:'Cadastro-Colecoes',component: PageCadastroColecoesComponent},
-    {path:'Editar-Colecoes',component:PageEditarColecoesComponent}
+    {path:'Editar-Colecoes/:id',component:PageEditarColecoesComponent},
+    {path:'Modelos', component:PaginaModelosComponent}
   ]}
 
 

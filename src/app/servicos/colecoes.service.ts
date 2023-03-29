@@ -6,8 +6,7 @@ import { Colecoes } from '../interfaces/colecoes';
 @Injectable({
   providedIn: 'root'
 })
-export class GetColecoesService {
-
+export class ColecoesService {
   private urlBAse = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }

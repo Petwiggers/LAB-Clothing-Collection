@@ -1,17 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { InterfaceUsuario } from '../interfaces/interface-usuario';
+import { Modelos } from '../interfaces/modelos';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ValidarUsuarioService {
+export class ModelosService {
   private urlBAse = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
-  validarUsuario(): Observable<InterfaceUsuario[]>{
-    return this.http.get<InterfaceUsuario[]>(`${this.urlBAse}/usuarios`);
+  getModelos():Observable<Modelos[]>{
+    return this.http.get<Modelos[]>(`${this.urlBAse}/models`);
   }
 }

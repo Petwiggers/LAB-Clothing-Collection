@@ -9,12 +9,12 @@
         <th scope="col">Orçamento</th>
       </tr>
     </thead>
-    <tbody>
-      <tr *ngFor="let colecao of colecoes">
+    <tbody  *ngFor="let colecao of colecoesModificadas">
+      <tr (click)="editaColecao(colecao.id)">
         <th>{{colecao.nome}}</th>
         <td>{{colecao.responsavel}}</td>
         <td>{{colecao.estacao}} {{colecao.anoLancamento}}</td>
-        <td>{{colecao.modelos.length}}</td>
+        <td>{{colecao.quantidadeModelos}}</td>
         <td>{{colecao.orcamento}}</td>
       </tr>
     </tbody>

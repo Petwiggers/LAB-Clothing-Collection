@@ -6,12 +6,16 @@ import { InterfaceUsuario } from '../interfaces/interface-usuario';
 @Injectable({
   providedIn: 'root'
 })
-export class CadastrarUsuarioService {
+export class UserService {
   private urlBAse = 'http://localhost:3000';
-  
+
   constructor(private http: HttpClient) { }
 
-  adicionarUsuario(usuario: InterfaceUsuario): Observable<InterfaceUsuario> {
+  getUsuario(): Observable<InterfaceUsuario[]>{
+    return this.http.get<InterfaceUsuario[]>(`${this.urlBAse}/usuarios`);
+  }
+
+  postUsuario(usuario: InterfaceUsuario): Observable<InterfaceUsuario> {
     return this.http.post<InterfaceUsuario>(`${this.urlBAse}/usuarios`, usuario);
   }
 }

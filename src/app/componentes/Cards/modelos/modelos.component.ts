@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GetColecoesService } from 'src/app/servicos/get-colecoes.service';
+import { ModelosService } from 'src/app/servicos/modelos.service';
 
 @Component({
   selector: 'app-modelos',
@@ -12,35 +12,14 @@ export class ModelosComponent {
   ngOnInit(): void {
     this.pegarColecoes();
   }
-  constructor(private http: GetColecoesService){}
+  constructor(private http: ModelosService){}
 
   pegarColecoes(){
-    this.http.getColecoes().subscribe((retorno => {
-      retorno.map((valor) => {
-        if (valor.modelos) {
-          this.numeroModelos += valor.modelos.length;
-        }
-      })
-    }));
-      // function getColecoes() {
-  //   let colecoesModificadas = []
-  //   const colecoes = http.get('/colecoes');
-  //   const modelos = http.get('/modelos')
-  
-  //   for (let i = 0; i <= colecoes.length; i++) {
-  //     const modelosColecao = modelos.filter(q => q.colecao === colecao.id)
-  //     const obj = {
-  //       ...colecoes[i],
-  //       qtdModelos: modelosColecao.length
-  //     }
-  
-  //     colecoesModificadas.push(obj)
-  //   }
-  
-  //   return colecoesModificadas
-  // }
+    this.http.getModelos().subscribe((retorno) => {
+      this.numeroModelos = retorno.length;
+    })
 
-  }
+}
  
 
 }

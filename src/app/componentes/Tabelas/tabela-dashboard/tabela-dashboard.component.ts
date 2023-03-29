@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Colecoes } from 'src/app/interfaces/colecoes';
-import { GetColecoesService } from 'src/app/servicos/get-colecoes.service';
+import { ColecoesService } from 'src/app/servicos/colecoes.service';
+
 
 @Component({
   selector: 'app-tabela-dashboard',
@@ -13,28 +14,23 @@ export class TabelaDashboardComponent {
 
   ngOnInit() {
    this.getColecoes();
-    
   }
 
-  constructor(private http:GetColecoesService){}
+  constructor(private http:ColecoesService){}
 
  getColecoes(){
     this.http.getColecoes().subscribe((colecoes) => {
-      // let maioresOrcamentos:number[] = [];
       for (let index = 0; index < 5; index++) {
         let maiorNumero: number = 0;
         let indexMaiorNumero: number = 0;
         colecoes.forEach((valor: Colecoes,index:number) => {
           if (valor.orcamento>maiorNumero) {
-            // maiorNumero = valor.orcamento
+            maiorNumero = valor.orcamento
             indexMaiorNumero = index;
           }
         });
         this.maioresOrcamentos.push(colecoes[indexMaiorNumero]);
-        // console.log('Maiores Orçamentos '+this.maioresOrcamentos);
         colecoes.splice(indexMaiorNumero,1);
-        // console.log('Coleções: '+colecoes);
-        
       }
     });
   }

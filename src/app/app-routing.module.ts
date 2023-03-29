@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompletoComponent } from './layout/completo/completo.component';
 import { SimplesComponent } from './layout/Simples/simples.component';
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
+import { PageEditarColecoesComponent } from './pages/Coleções/editar-colecoes/editar-colecoes.component';
 import { PageCadastroColecoesComponent } from './pages/Coleções/page-cadastro-colecoes/page-cadastro-colecoes.component';
 import { PaginaColecoesComponent } from './pages/Coleções/pagina-colecoes/pagina-colecoes.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'home', component: CompletoComponent, canActivate : [GuardHomeGuard],children: [
     {path:'Dashboard', component: DashboardComponent},
     {path:'Colecoes',component: PaginaColecoesComponent},
-    {path:'Cadastro',component: PageCadastroColecoesComponent}
+    {path:'Cadastro-Colecoes',component: PageCadastroColecoesComponent},
+    {path:'Editar-Colecoes',component:PageEditarColecoesComponent}
   ]}
 
 

@@ -23,6 +23,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CadastroColecoesComponent } from './componentes/Formularios/cadastro-colecoes/cadastro-colecoes.component';
 import { PaginaColecoesComponent } from './pages/Coleções/pagina-colecoes/pagina-colecoes.component';
 import { PageCadastroColecoesComponent } from './pages/Coleções/page-cadastro-colecoes/page-cadastro-colecoes.component';
+import { EditarColecoesComponent } from './componentes/Formularios/editar-colecoes/editar-colecoes.component';
+import { PageEditarColecoesComponent } from './pages/Coleções/editar-colecoes/editar-colecoes.component';
+
 
 
 
@@ -47,7 +50,9 @@ import { PageCadastroColecoesComponent } from './pages/Coleções/page-cadastro-
     TabelaColecaoComponent,
     PaginaColecoesComponent,
     CadastroColecoesComponent,
-    PageCadastroColecoesComponent
+    PageCadastroColecoesComponent,
+    EditarColecoesComponent,
+    PageEditarColecoesComponent
   ],
   imports: [
     BrowserModule,

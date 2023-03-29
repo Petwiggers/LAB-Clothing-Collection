@@ -3,10 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompletoComponent } from './layout/completo/completo.component';
 import { SimplesComponent } from './layout/Simples/simples.component';
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
+import { PageCadastroColecoesComponent } from './pages/Coleções/page-cadastro-colecoes/page-cadastro-colecoes.component';
+import { PaginaColecoesComponent } from './pages/Coleções/pagina-colecoes/pagina-colecoes.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { EsqueciSenhaComponent } from './pages/Esqueci-Senha/esqueci-senha.component';
 import { LoginComponent } from './pages/Login/login.component';
-import { PaginaColecoesComponent } from './pages/pagina-colecoes/pagina-colecoes.component';
 import { GuardHomeGuard } from './servicos/guard-home.guard';
 
 
@@ -19,10 +20,10 @@ const routes: Routes = [
   ]},
   {path: 'home', component: CompletoComponent, canActivate : [GuardHomeGuard],children: [
     {path:'Dashboard', component: DashboardComponent},
-    {path:'Colecoes',component: PaginaColecoesComponent}
+    {path:'Colecoes',component: PaginaColecoesComponent},
+    {path:'Cadastro',component: PageCadastroColecoesComponent}
   ]}
-  // {path: '', redirectTo: 'Dashboard',pathMatch: 'full'},
-  // {path: 'Dashboard',component: DashboardComponent}
+
 
 ];
 

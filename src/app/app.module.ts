@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,15 +14,16 @@ import { FormCadastroUsuarioComponent } from './componentes/Formularios/form-cad
 import { CompletoComponent } from './layout/completo/completo.component';
 import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.component';
 import { HeaderComponent } from './componentes/header/header.component';
-
 import { ModelosComponent } from './componentes/Cards/modelos/modelos.component';
 import { OrcamentoMedioComponent } from './componentes/Cards/orcamento-medio/orcamento-medio.component';
 import { TabelaDashboardComponent } from './componentes/Tabelas/tabela-dashboard/tabela-dashboard.component';
 import { TabelaColecaoComponent } from './componentes/Tabelas/tabela-colecao/tabela-colecao.component';
 import { CardColecoesComponent } from './componentes/Cards/colecoes/colecoes.component';
-
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { PaginaColecoesComponent } from './pages/pagina-colecoes/pagina-colecoes.component';
+import { CadastroColecoesComponent } from './componentes/Formularios/cadastro-colecoes/cadastro-colecoes.component';
+import { PaginaColecoesComponent } from './pages/Coleções/pagina-colecoes/pagina-colecoes.component';
+import { PageCadastroColecoesComponent } from './pages/Coleções/page-cadastro-colecoes/page-cadastro-colecoes.component';
+
 
 
 @NgModule({
@@ -46,6 +46,8 @@ import { PaginaColecoesComponent } from './pages/pagina-colecoes/pagina-colecoes
     TabelaDashboardComponent,
     TabelaColecaoComponent,
     PaginaColecoesComponent,
+    CadastroColecoesComponent,
+    PageCadastroColecoesComponent
   ],
   imports: [
     BrowserModule,

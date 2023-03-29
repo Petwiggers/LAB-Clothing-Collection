@@ -21,7 +21,25 @@ export class ModelosComponent {
           this.numeroModelos += valor.modelos.length;
         }
       })
-    }))
+    }));
+      // function getColecoes() {
+  //   let colecoesModificadas = []
+  //   const colecoes = http.get('/colecoes');
+  //   const modelos = http.get('/modelos')
+  
+  //   for (let i = 0; i <= colecoes.length; i++) {
+  //     const modelosColecao = modelos.filter(q => q.colecao === colecao.id)
+  //     const obj = {
+  //       ...colecoes[i],
+  //       qtdModelos: modelosColecao.length
+  //     }
+  
+  //     colecoesModificadas.push(obj)
+  //   }
+  
+  //   return colecoesModificadas
+  // }
+
   }
  
 

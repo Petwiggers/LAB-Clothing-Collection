@@ -1,0 +1,60 @@
+
+form{
+  width: 1000px;;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  gap: 15px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+ p ,label{
+  color: #B4B6C1;
+}
+
+.form-control{
+  width: 350px;
+}
+
+.btn-primary{
+  width: 100px;
+  margin-top: 20px;
+}
+
+p{
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.flex-row{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#butons{
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.btn-secondary{
+  background-color: blue;
+}
+
+#botaoSalvar{
+  background-color: #0073CF;
+}
+#botaoCancelar{
+  background-color: #EBEBEB;
+  color: #A098AE;
+  border: none;
+}
+
+.butons{
+  width: 180px;
+}

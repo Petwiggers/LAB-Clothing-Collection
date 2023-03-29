@@ -26,6 +26,15 @@
           "responsavel": "Yan",
           "bordado": true,
           "estampa": true
+        },
+        {
+          "id": 3,
+          "nome": "Rodeio",
+          "tipoModelo": "Calça",
+          "colecao": 1,
+          "responsavel": "Yan",
+          "bordado": true,
+          "estampa": true
         }
       ]
     },

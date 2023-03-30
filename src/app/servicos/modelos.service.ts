@@ -14,4 +14,8 @@ export class ModelosService {
   getModelos():Observable<Modelos[]>{
     return this.http.get<Modelos[]>(`${this.urlBAse}/models`);
   }
+
+  deleteModelos(id: string|null): Observable<Modelos> {
+    return this.http.delete<Modelos>(`${this.urlBAse}/models/${id}`);
+  }
 }

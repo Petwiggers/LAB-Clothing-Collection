@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Colecoes } from 'src/app/interfaces/colecoes';
+import { Modelos } from 'src/app/interfaces/modelos';
 import { ColecoesService } from 'src/app/servicos/colecoes.service';
+import { ModelosService } from 'src/app/servicos/modelos.service';
 
 @Component({
   selector: 'app-editar-colecoes-form',
@@ -13,12 +15,14 @@ export class EditarColecoesComponent implements OnInit{
   colecaoId!: string|null;
   colecao!: Colecoes[]|undefined;
   formulario!: FormGroup;
+  modelos!: any;
 
-  constructor(private rotaAtiva: ActivatedRoute, private http: ColecoesService){}
+  constructor(private rotaAtiva: ActivatedRoute, private httpColecoes: ColecoesService,private httpModelos: ModelosService){}
 
   async ngOnInit(){
     this.colecaoId = this.rotaAtiva.snapshot.paramMap.get('id');
-    this.colecao = await this.http.getColecoeId(this.colecaoId).toPromise();
+    this.colecao = await this.httpColecoes.getColecoeId(this.colecaoId).toPromise();
+    this.modelos = await this.httpModelos.getModelos().toPromise();
     this.criarFormulario(this.colecao);
   }
 
@@ -36,9 +40,29 @@ export class EditarColecoesComponent implements OnInit{
 
   OnSubmit(){
     console.log(this.formulario.value);
-    this.http.putColecao(this.formulario.value,this.colecaoId).toPromise();
+    this.httpColecoes.putColecao(this.formulario.value,this.colecaoId).toPromise();
   }
+
+
+
+  
   excluir(){
-    this.http.deleteColecao(this.colecaoId).toPromise();
+    const modelos = [];
+
+    if (this.colecaoId) {
+      const IdColecao = parseInt(this.colecaoId);
+      for (let i = 0; i < this.modelos.length; i++) {
+        if (this.modelos[i].colecao === IdColecao) {
+          modelos.push(this.modelos[i]);
+          console.log(modelos);
+        }
+      }
+    if (modelos) {
+      for (let i = 0; i < modelos.length; i++) {
+        this.httpModelos.deleteModelos(modelos[i].id).toPromise();
+      }
+    }
+    this.httpColecoes.deleteColecao(this.colecaoId).toPromise();
+    }
   }
 }

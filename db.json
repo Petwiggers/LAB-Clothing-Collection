@@ -2,15 +2,6 @@
   "colecoes": [
     {
       "id": 1,
-      "nome": "Moda para Inverno",
-      "responsavel": "Peterson Wiggers",
-      "estacao": "Verão",
-      "marca": "Nike",
-      "orcamento": 100000,
-      "anoLancamento": "2000"
-    },
-    {
-      "id": 2,
       "nome": "Moda Esportiva",
       "responsavel": "Raphael Aguiar",
       "estacao": "Inverno",
@@ -19,22 +10,31 @@
       "anoLancamento": "2018"
     },
     {
-      "id": 4,
-      "nome": "Coleção Verão",
-      "responsavel": "Leticia Carbonera",
-      "estacao": "Primavera",
-      "marca": "High",
-      "orcamento": 43702,
-      "anoLancamento": "2019"
+      "nome": "Coleção Audaces",
+      "responsavel": "Yan",
+      "estacao": "Inverno",
+      "marca": "Audaces",
+      "orcamento": 50000,
+      "anoLancamento": 2023,
+      "id": 2
     },
     {
-      "nome": "Moda Gaúcha ",
-      "responsavel": "Léticia Silva",
+      "nome": "Coleção Nova",
+      "responsavel": "Joarez Soares",
       "estacao": "Inverno",
       "marca": "Nike",
-      "orcamento": 180000,
+      "orcamento": 100000,
       "anoLancamento": 2021,
-      "id": 5
+      "id": 3
+    },
+    {
+      "nome": "Moda Gaúcha",
+      "responsavel": "Alisson Vendolin",
+      "estacao": "Verão",
+      "marca": "Adidas",
+      "orcamento": 200000,
+      "anoLancamento": 2021,
+      "id": 4
     }
   ],
   "usuarios": [
@@ -50,117 +50,54 @@
   "models": [
     {
       "id": 1,
-      "nome": "Modelo 1",
-      "tipoModelo": "Shorts",
-      "colecao": 6,
-      "responsavel": "Yan",
+      "nome": "Casaco Forrado",
+      "tipoModelo": "Casaco ",
+      "colecao": 3,
+      "responsavel": "Peterson",
       "bordado": true,
       "estampa": true
     },
     {
       "id": 2,
-      "nome": "Rodeio",
+      "nome": "Botas de Rodeio",
       "tipoModelo": "Botas",
-      "colecao": 6,
+      "colecao": 2,
       "responsavel": "Yan",
       "bordado": true,
       "estampa": true
     },
     {
       "id": 3,
-      "nome": "Modelo 1",
-      "tipoModelo": "Shorts",
-      "colecao": 5,
-      "responsavel": "Yan",
+      "nome": "Bombacha",
+      "tipoModelo": "Calça",
+      "colecao": 4,
+      "responsavel": "Iane",
       "bordado": true,
       "estampa": true
     },
     {
       "id": 4,
-      "nome": "Rodeio",
-      "tipoModelo": "Botas",
-      "colecao": 5,
-      "responsavel": "Yan",
+      "nome": "Bíquine Verão",
+      "tipoModelo": "Bíquine",
+      "colecao": 1,
+      "responsavel": "Jocelma",
       "bordado": true,
       "estampa": true
     },
     {
       "id": 5,
-      "nome": "Modelo 1",
-      "tipoModelo": "Shorts",
-      "colecao": 4,
-      "responsavel": "Yan",
+      "nome": "Camisa Social",
+      "tipoModelo": "Camisa",
+      "colecao": 1,
+      "responsavel": "Peterson Wiggers",
       "bordado": true,
       "estampa": true
     },
     {
       "id": 6,
-      "nome": "Rodeio",
-      "tipoModelo": "Botas",
-      "colecao": 4,
-      "responsavel": "Yan",
-      "bordado": true,
-      "estampa": true
-    },
-    {
-      "id": 7,
-      "nome": "Modelo 1",
-      "tipoModelo": "Shorts",
-      "colecao": 1,
-      "responsavel": "Yan",
-      "bordado": true,
-      "estampa": true
-    },
-    {
-      "id": 8,
-      "nome": "Rodeio",
-      "tipoModelo": "Botas",
+      "nome": "Cinto",
+      "tipoModelo": "Cinto",
       "colecao": 3,
-      "responsavel": "Yan",
-      "bordado": true,
-      "estampa": true
-    },
-    {
-      "id": 9,
-      "nome": "Modelo 1",
-      "tipoModelo": "Shorts",
-      "colecao": 3,
-      "responsavel": "Yan",
-      "bordado": true,
-      "estampa": true
-    },
-    {
-      "id": 10,
-      "nome": "Rodeio",
-      "tipoModelo": "Botas",
-      "colecao": 1,
-      "responsavel": "Yan",
-      "bordado": true,
-      "estampa": true
-    },
-    {
-      "id": 11,
-      "nome": "Modelo 1",
-      "tipoModelo": "Shorts",
-      "colecao": 1,
-      "responsavel": "Yan",
-      "bordado": true,
-      "estampa": true
-    },
-    {
-      "id": 12,
-      "nome": "Rodeio",
-      "tipoModelo": "Botas",
-      "colecao": 1,
-      "responsavel": "Yan",
-      "bordado": true,
-      "estampa": true
-    },
-    {
-      "id": 13,
-      "nome": "Rodeio",
-      "tipoModelo": "Calça",
-      "colecao": 1,
       "responsavel": "Yan",
       "bordado": true,
       "estampa": true

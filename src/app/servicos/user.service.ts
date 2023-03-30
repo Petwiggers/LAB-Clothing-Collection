@@ -18,4 +18,6 @@ export class UserService {
   postUsuario(usuario: InterfaceUsuario): Observable<InterfaceUsuario> {
     return this.http.post<InterfaceUsuario>(`${this.urlBAse}/usuarios`, usuario);
   }
+
+  
 }

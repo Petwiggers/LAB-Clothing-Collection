@@ -1,0 +1,20 @@
+<div id="conteiner">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ModeloID</th>
+        <th scope="col">Nome do Modelo</th>
+        <th scope="col">Responsável</th>
+        <th scope="col">Coleção</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let modelo of modelosModificadas">
+        <th>0{{modelo.id}}</th>
+        <td>{{modelo.nome}}</td>
+        <td>{{modelo.responsavel}}</td>
+        <td>{{modelo.colecaoNome}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

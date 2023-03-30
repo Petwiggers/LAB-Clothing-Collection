@@ -1,5 +1,5 @@
 <div id="conteiner">
-  <form >
+  <form [formGroup]="formulario" (ngSubmit)="OnSubmit()" *ngIf="formulario">
     <div class="flex-row">
       <div class="form-floating">
         <input type="text" class="form-control" id="floatingInput" placeholder="text" formControlName="nome">
@@ -36,9 +36,9 @@
     
       
     <div id="butons">
-      <button type="button" class="btn btn-primary butons" id="botaoExcluir">Excluir</button>
-      <button type="button" class="btn btn-primary butons" id="botaoCancelar">Cancelar</button>
-      <button type="submit" class="btn btn-primary butons" >Atualizar</button>
+      <button type="button" class="btn btn-primary butons" id="botaoExcluir" (click)="excluir()">Excluir</button>
+      <button type="button" class="btn btn-primary butons" id="botaoCancelar" routerLink="/home/Colecoes">Cancelar</button>
+      <button type="submit" class="btn btn-primary butons" routerLink="home/Colecoes">Atualizar</button>
     </div>
   </form>
 </div>

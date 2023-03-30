@@ -19,15 +19,6 @@
       "anoLancamento": "2018"
     },
     {
-      "id": 3,
-      "nome": "Primavera Verão",
-      "responsavel": "Alisson Vendolin",
-      "estacao": "Primavera",
-      "marca": "Adidas",
-      "orcamento": 82000,
-      "anoLancamento": "2019"
-    },
-    {
       "id": 4,
       "nome": "Coleção Verão",
       "responsavel": "Leticia Carbonera",
@@ -37,31 +28,13 @@
       "anoLancamento": "2019"
     },
     {
-      "id": 5,
-      "nome": "Moda Gaúcha",
-      "responsavel": "João da Silva",
+      "nome": "Moda Gaúcha ",
+      "responsavel": "Léticia Silva",
       "estacao": "Inverno",
-      "marca": "D&G",
-      "orcamento": 25000,
-      "anoLancamento": "2015"
-    },
-    {
-      "id": 6,
-      "nome": "Aventura",
-      "responsavel": "Inácio Albuquerque",
-      "estacao": "Primavera",
-      "marca": "D&G",
-      "orcamento": 90000,
-      "anoLancamento": "2015"
-    },
-    {
-      "nome": "Coleção Nova",
-      "responsavel": "Peterson",
-      "estacao": "Outono",
-      "marca": "Adidas",
-      "orcamento": 40000,
-      "anoLancamento": 2023,
-      "id": 7
+      "marca": "Nike",
+      "orcamento": 180000,
+      "anoLancamento": 2021,
+      "id": 5
     }
   ],
   "usuarios": [

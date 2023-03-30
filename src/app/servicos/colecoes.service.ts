@@ -15,7 +15,19 @@ export class ColecoesService {
     return this.http.get<Colecoes[]>(`${this.urlBAse}/colecoes`);
   }
 
+  getColecoeId(id:string|null):Observable<Colecoes[]>{
+    return this.http.get<Colecoes[]>(`${this.urlBAse}/colecoes/${id}`);
+  }
+
   postColecao(colecao: Colecoes): Observable<Colecoes> {
     return this.http.post<Colecoes>(`${this.urlBAse}/colecoes`, colecao);
+  }
+
+  putColecao(colecao: Colecoes, id: string|null): Observable<Colecoes> {
+    return this.http.put<Colecoes>(`${this.urlBAse}/colecoes/${id}`, colecao);
+  }
+
+  deleteColecao(id: string|null): Observable<Colecoes> {
+    return this.http.delete<Colecoes>(`${this.urlBAse}/colecoes/${id}`);
   }
 }

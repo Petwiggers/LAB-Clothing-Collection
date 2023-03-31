@@ -1,11 +1,12 @@
 <div id="conteiner">
-  <form [formGroup]="formulario" *ngIf="formulario">
+  <form [formGroup] ="formulario" *ngIf="formulario" (ngSubmit)="OnSubmit()">
     <div class="flex-row">
       <div class="form-floating">
         <input type="text" class="form-control" id="floatingInput" placeholder="text" formControlName="nome">
         <label for="floatingInput">Nome do Modelo</label>
       </div>
       <select class="form-select" placeholder="Selecione o tipo do Seu Modelo" formControlName="tipoModelo">
+        <option selected >Selecione o tipo do Seu Modelo</option>
         <option value="Bermuda">Bermuda</option>
         <option value="Bíquini">Bíquini</option>
         <option value="Bolsa">Bolsa</option>
@@ -16,6 +17,7 @@
         <option value="Chápeu">Chápeu</option>
         <option value="Saia">Saia</option>
       </select> 
+
     </div>
     <div class="flex-row">
       <select class="form-select" placeholder="Selecione o tipo do Seu Coleção" formControlName="colecao">
@@ -31,11 +33,11 @@
         <input type="radio" class="form-control" id="floatingInput" placeholder="text">
         <label for="floatingInput">Possui Bordado ?</label>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="bordado" id="inlineRadio1" value="Sim" formControlName="bordado">
+          <input class="form-check-input" type="radio" name="bordado" id="inlineRadio1" value="true" formControlName="bordado">
           <label class="form-check-label" for="inlineRadio1">Sim</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="bordado" id="inlineRadio2" value="Não" formControlName="bordado">
+          <input class="form-check-input" type="radio" name="bordado" id="inlineRadio2" value="false" formControlName="bordado">
           <label class="form-check-label" for="inlineRadio2">Não</label>
         </div>
       </div>
@@ -43,11 +45,11 @@
         <input type="radio" class="form-control" id="floatingPassword" placeholder="number">
         <label for="floatingInput">Possui Estanpa ?</label>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="estampa" id="inlineRadio1" value="Sim" formControlName="estampa">
+          <input class="form-check-input" type="radio" name="estampa" id="inlineRadio1" value="true" formControlName="estampa">
           <label class="form-check-label" for="inlineRadio1">Sim</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="estampa" id="inlineRadio2" value="Não" formControlName="estampa">
+          <input class="form-check-input" type="radio" name="estampa" id="inlineRadio2" value="false" formControlName="estampa">
           <label class="form-check-label" for="inlineRadio2">Não</label>
         </div>
       </div>
@@ -59,7 +61,7 @@
     <div id="butons">
       <button type="button" class="btn btn-primary butons" id="botaoExcluir" (click)="excluir()" routerLink="/home/Modelos">Excluir</button>
       <button type="button" class="btn btn-primary butons" id="botaoCancelar" routerLink="/home/Modelos" >Cancelar</button>
-      <button type="button" class="btn btn-primary butons" (click)="OnSubmit()" routerLink="/home/Modelos">Atualizar</button>
+      <button type="submit" class="btn btn-primary butons" routerLink="/home/Modelos" >Atualizar</button>
     </div>
   </form>
 </div>

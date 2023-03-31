@@ -33,8 +33,9 @@ export class CadastroModelosComponent {
   }
 
   OnSubmit(){
-    if (!this.formulario.valid) {
+    if (!this.formulario.valid)  {
       alert('Ouve algum erro de validação nos dados de seu Formulário !')
+      console.log(this.formulario)
       return
     }
     const modelo = {
@@ -42,8 +43,8 @@ export class CadastroModelosComponent {
       tipoModelo: this.formulario.value.tipoModelo,
       colecao: parseInt(this.formulario.value.colecao),
       responsavel: this.formulario.value.responsavel,
-      bordado: this.formulario.value.nome,
-      estampa: this.formulario.value.nome
+      bordado: this.formulario.value.bordado,
+      estampa: this.formulario.value.estampa
     }
 
     this.cadastrarModelo(modelo);

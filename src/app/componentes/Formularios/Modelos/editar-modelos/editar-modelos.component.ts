@@ -42,6 +42,8 @@ export class EditarModelosComponent {
       return
     }
     this.httpModelos.putModelo(this.formulario.value,this.modeloId).toPromise();
+    // console.log(this.formulario.value);
+    
   }
 
   excluir(){

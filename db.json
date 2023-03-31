@@ -35,6 +35,15 @@
       "orcamento": 40000,
       "anoLancamento": 2021,
       "id": 5
+    },
+    {
+      "nome": "Coleção Inverno",
+      "responsavel": "Alisson",
+      "estacao": "Inverno",
+      "marca": "Nike",
+      "orcamento": 50000,
+      "anoLancamento": 2021,
+      "id": 6
     }
   ],
   "usuarios": [
@@ -50,30 +59,30 @@
   "models": [
     {
       "id": 1,
-      "nome": "Casaco Forrado",
-      "tipoModelo": "Casaco ",
+      "nome": "Saia Justa",
+      "tipoModelo": "Saia",
       "colecao": 3,
       "responsavel": "Peterson",
-      "bordado": true,
-      "estampa": true
+      "bordado": "true",
+      "estampa": "true"
     },
     {
       "id": 2,
       "nome": "Botas de Rodeio",
-      "tipoModelo": "Botas",
+      "tipoModelo": "Calçados",
       "colecao": 2,
       "responsavel": "Yan",
-      "bordado": true,
-      "estampa": true
+      "bordado": "true",
+      "estampa": "true"
     },
     {
       "id": 4,
       "nome": "Bíquine Verão",
-      "tipoModelo": "Bíquine",
+      "tipoModelo": "Bíquini",
       "colecao": 1,
       "responsavel": "Jocelma",
-      "bordado": true,
-      "estampa": true
+      "bordado": "true",
+      "estampa": "true"
     },
     {
       "id": 5,
@@ -81,35 +90,44 @@
       "tipoModelo": "Camisa",
       "colecao": 1,
       "responsavel": "Peterson Wiggers",
-      "bordado": true,
-      "estampa": true
+      "bordado": "true",
+      "estampa": "true"
     },
     {
       "nome": "Calça Larga",
       "tipoModelo": "Bíquini",
       "colecao": 3,
       "responsavel": "Peterson",
-      "bordado": "Sim",
-      "estampa": "Não",
+      "bordado": "true",
+      "estampa": "false",
       "id": 7
     },
     {
-      "nome": "Tênis de Corrida",
-      "tipoModelo": "Calçados",
-      "colecao": 2,
+      "nome": "Camisa Gola Polo",
+      "tipoModelo": "Camisa",
+      "colecao": 3,
       "responsavel": "Peterson",
-      "bordado": "Tênis de Corrida",
-      "estampa": "Tênis de Corrida",
+      "bordado": "true",
+      "estampa": "false",
       "id": 8
     },
     {
-      "nome": "Camisa Larga",
-      "tipoModelo": "Camisa",
+      "nome": "Calça Jeans",
+      "tipoModelo": "Calça",
       "colecao": 5,
-      "responsavel": "Peterson",
-      "bordado": "Camisa Larga",
-      "estampa": "Camisa Larga",
+      "responsavel": "Ricardo",
+      "bordado": "true",
+      "estampa": "false",
       "id": 9
+    },
+    {
+      "nome": "Teste",
+      "tipoModelo": "Camisa",
+      "colecao": 1,
+      "responsavel": "Peterson",
+      "bordado": "false",
+      "estampa": "false",
+      "id": 10
     }
   ]
 }

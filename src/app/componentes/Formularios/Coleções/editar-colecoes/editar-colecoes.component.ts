@@ -51,7 +51,6 @@ export class EditarColecoesComponent implements OnInit{
       for (let i = 0; i < this.modelos.length; i++) {
         if (this.modelos[i].colecao === IdColecao) {
           modelos.push(this.modelos[i]);
-          console.log(modelos);
         }
       }
     if (modelos) {

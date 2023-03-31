@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -29,6 +28,9 @@ import { EditarColecoesComponent } from './componentes/Formularios/Coleções/ed
 import { TabelaModelosComponent } from './componentes/Tabelas/tabela-modelos/tabela-modelos.component';
 import { PaginaCadastroModelosComponent } from './pages/Modelos/pagina-cadastro-modelos/pagina-cadastro-modelos.component';
 import { CadastroModelosComponent } from './componentes/Formularios/Modelos/cadastro-modelos/cadastro-modelos.component';
+import { PaginaEditarModelosComponent } from './pages/Modelos/pagina-editar-modelos/pagina-editar-modelos.component';
+import { EditarModelosComponent } from './componentes/Formularios/Modelos/editar-modelos/editar-modelos.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -58,7 +60,9 @@ import { CadastroModelosComponent } from './componentes/Formularios/Modelos/cada
     PaginaModelosComponent,
     TabelaModelosComponent,
     PaginaCadastroModelosComponent,
-    CadastroModelosComponent
+    CadastroModelosComponent,
+    PaginaEditarModelosComponent,
+    EditarModelosComponent
   ],
   imports: [
     BrowserModule,

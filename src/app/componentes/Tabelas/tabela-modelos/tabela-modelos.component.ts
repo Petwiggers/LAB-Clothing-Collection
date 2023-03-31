@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Modelos } from 'src/app/interfaces/modelos';
 import { ColecoesService } from 'src/app/servicos/colecoes.service';
 import { ModelosService } from 'src/app/servicos/modelos.service';
@@ -13,7 +14,11 @@ export class TabelaModelosComponent implements OnInit{
   colecoes!: any;
   modelos!: Modelos[]|undefined;
 
-  constructor(private httpColecoes: ColecoesService, private httpModelos: ModelosService){}
+  constructor(
+    private httpColecoes: ColecoesService, 
+    private httpModelos: ModelosService,
+    private rota:Router){}
+
   ngOnInit(): void {
     this.pegarValores();
   }
@@ -37,9 +42,11 @@ export class TabelaModelosComponent implements OnInit{
           }
         }
       }
-      console.log(this.modelosModificadas);
-      
     }
+  }
+
+  editaModelos(id:number){
+    this.rota.navigate([`/home/Editar-Modelos/${id}`]);
   }
 
 }

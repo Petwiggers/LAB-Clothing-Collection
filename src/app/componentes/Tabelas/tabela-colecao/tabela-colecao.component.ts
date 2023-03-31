@@ -30,7 +30,7 @@ export class TabelaColecaoComponent implements OnInit{
   filtrarModelos(){
     if (this.modelos) {
       for(let i = 0; i < this.colecoes.length; i++){
-        const modelosColecao = this.modelos.filter((q:Modelos) => q.colecao === this.colecoes[i].id)
+        const modelosColecao = this.modelos.filter((modelo:Modelos) => modelo.colecao === this.colecoes[i].id)
         const objeto = {
           ...this.colecoes[i],
           quantidadeModelos: modelosColecao.length

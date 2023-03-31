@@ -1,13 +1,13 @@
 {
   "colecoes": [
     {
-      "id": 1,
       "nome": "Moda Esportiva",
       "responsavel": "Raphael Aguiar",
       "estacao": "Inverno",
       "marca": "Umbro",
       "orcamento": 10000,
-      "anoLancamento": "2018"
+      "anoLancamento": 2020,
+      "id": 1
     },
     {
       "nome": "Coleção Audaces",
@@ -15,7 +15,7 @@
       "estacao": "Inverno",
       "marca": "Audaces",
       "orcamento": 50000,
-      "anoLancamento": 2023,
+      "anoLancamento": 2000,
       "id": 2
     },
     {
@@ -28,13 +28,13 @@
       "id": 3
     },
     {
-      "nome": "Moda Gaúcha",
-      "responsavel": "Alisson Vendolin",
-      "estacao": "Verão",
-      "marca": "Adidas",
-      "orcamento": 200000,
+      "nome": "Moda Ativa",
+      "responsavel": "Carlos",
+      "estacao": "Outono",
+      "marca": "Umbro",
+      "orcamento": 40000,
       "anoLancamento": 2021,
-      "id": 4
+      "id": 5
     }
   ],
   "usuarios": [
@@ -67,15 +67,6 @@
       "estampa": true
     },
     {
-      "id": 3,
-      "nome": "Bombacha",
-      "tipoModelo": "Calça",
-      "colecao": 4,
-      "responsavel": "Iane",
-      "bordado": true,
-      "estampa": true
-    },
-    {
       "id": 4,
       "nome": "Bíquine Verão",
       "tipoModelo": "Bíquine",
@@ -90,15 +81,6 @@
       "tipoModelo": "Camisa",
       "colecao": 1,
       "responsavel": "Peterson Wiggers",
-      "bordado": true,
-      "estampa": true
-    },
-    {
-      "id": 6,
-      "nome": "Cinto",
-      "tipoModelo": "Cinto",
-      "colecao": 3,
-      "responsavel": "Yan",
       "bordado": true,
       "estampa": true
     },
@@ -119,6 +101,15 @@
       "bordado": "Tênis de Corrida",
       "estampa": "Tênis de Corrida",
       "id": 8
+    },
+    {
+      "nome": "Camisa Larga",
+      "tipoModelo": "Camisa",
+      "colecao": 5,
+      "responsavel": "Peterson",
+      "bordado": "Camisa Larga",
+      "estampa": "Camisa Larga",
+      "id": 9
     }
   ]
 }

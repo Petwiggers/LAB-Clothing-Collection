@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody *ngFor="let modelo of modelosModificadas">
-      <tr>
+      <tr (click)="editaModelos(modelo.id)">
         <th>0{{modelo.id}}</th>
         <td>{{modelo.nome}}</td>
         <td>{{modelo.responsavel}}</td>

@@ -15,11 +15,19 @@ export class ModelosService {
     return this.http.get<Modelos[]>(`${this.urlBAse}/models`);
   }
 
+  getModeloId(id:string|null):Observable<Modelos[]>{
+    return this.http.get<Modelos[]>(`${this.urlBAse}/models/${id}`);
+  }
+
   postModelo(modelo: Modelos): Observable<Modelos> {
     return this.http.post<Modelos>(`${this.urlBAse}/models`, modelo);
   }
 
   deleteModelos(id: string|null): Observable<Modelos> {
     return this.http.delete<Modelos>(`${this.urlBAse}/models/${id}`);
+  }
+
+  putModelo(modelo: Modelos, id: string|null): Observable<Modelos> {
+    return this.http.put<Modelos>(`${this.urlBAse}/models/${id}`, modelo);
   }
 }

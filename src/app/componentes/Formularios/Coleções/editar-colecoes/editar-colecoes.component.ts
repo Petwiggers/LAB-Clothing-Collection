@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Colecoes } from 'src/app/interfaces/colecoes';
-import { Modelos } from 'src/app/interfaces/modelos';
 import { ColecoesService } from 'src/app/servicos/colecoes.service';
 import { ModelosService } from 'src/app/servicos/modelos.service';
 
@@ -27,7 +26,6 @@ export class EditarColecoesComponent implements OnInit{
   }
 
   criarFormulario(colecao:any){
-    
     this.formulario = new FormGroup({
       nome: new FormControl(colecao.nome,[Validators.required,Validators.minLength(3)]),
       responsavel: new FormControl(colecao.responsavel,[Validators.required]),
@@ -39,16 +37,15 @@ export class EditarColecoesComponent implements OnInit{
   }
 
   OnSubmit(){
-    console.log(this.formulario.value);
+    if (!this.formulario.valid) {
+      alert('Ouve algum erro de validação nos dados de seu Formulário !')
+      return
+    }
     this.httpColecoes.putColecao(this.formulario.value,this.colecaoId).toPromise();
   }
 
-
-
-  
   excluir(){
     const modelos = [];
-
     if (this.colecaoId) {
       const IdColecao = parseInt(this.colecaoId);
       for (let i = 0; i < this.modelos.length; i++) {

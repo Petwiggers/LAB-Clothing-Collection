@@ -40,7 +40,7 @@ export class CadastroColecoesComponent implements OnInit{
     this.http.postColecao(this.formulario.value).toPromise();
   }
 
-  retornarListagem(){
+  cancelar(){
     this.rota.navigate(['/home/Colecoes'])
   }
 }

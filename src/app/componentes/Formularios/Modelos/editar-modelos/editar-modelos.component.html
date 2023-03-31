@@ -30,7 +30,7 @@
     </div>
     <div class="flex-row">
       <div class="form-floating">
-        <input type="radio" class="form-control" id="floatingInput" placeholder="text">
+        <input type="radio" class="form-control form-control-semBorda" id="floatingInput" placeholder="text">
         <label for="floatingInput">Possui Bordado ?</label>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="bordado" id="inlineRadio1" value="true" formControlName="bordado">
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="form-floating">
-        <input type="radio" class="form-control" id="floatingPassword" placeholder="number">
+        <input type="radio" class="form-control form-control-semBorda" id="floatingPassword" placeholder="number">
         <label for="floatingInput">Possui Estanpa ?</label>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="estampa" id="inlineRadio1" value="true" formControlName="estampa">
@@ -59,9 +59,9 @@
       <img src="../../../../assets/QuadroRoupas.jpg" alt="Quadro De Roupas">
     </div>
     <div id="butons">
-      <button type="button" class="btn btn-primary butons" id="botaoExcluir" (click)="excluir()" routerLink="/home/Modelos">Excluir</button>
-      <button type="button" class="btn btn-primary butons" id="botaoCancelar" routerLink="/home/Modelos" >Cancelar</button>
-      <button type="submit" class="btn btn-primary butons" routerLink="/home/Modelos" >Atualizar</button>
+      <button type="button" class="btn btn-primary butons" id="botaoExcluir" (click)="excluir()" >Excluir</button>
+      <button type="button" class="btn btn-primary butons" id="botaoCancelar" (click)="cancelar()">Cancelar</button>
+      <button type="submit" class="btn btn-primary butons" >Atualizar</button>
     </div>
   </form>
 </div>

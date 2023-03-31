@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Colecoes } from 'src/app/interfaces/colecoes';
 import { Modelos } from 'src/app/interfaces/modelos';
 import { ColecoesService } from 'src/app/servicos/colecoes.service';
@@ -14,7 +15,7 @@ export class CadastroModelosComponent {
   formulario!: FormGroup; 
   colecoes!: Colecoes[]|undefined;
 
-  constructor(private httpModelos: ModelosService, private httpColecoes: ColecoesService){}
+  constructor(private httpModelos: ModelosService, private httpColecoes: ColecoesService,private rota:Router){}
   async ngOnInit() {
     this.colecoes = await this.httpColecoes.getColecoes().toPromise();
     this.criarFormulario();
@@ -48,10 +49,14 @@ export class CadastroModelosComponent {
     }
 
     this.cadastrarModelo(modelo);
+    this.rota.navigate(['/home/Modelos'])
     this.criarFormulario();
   }
 
-  cadastrarModelo(modelo: Modelos){
-    this.httpModelos.postModelo(modelo).toPromise();
+  async cadastrarModelo(modelo: Modelos){
+   await this.httpModelos.postModelo(modelo).toPromise();
+  }
+  cancelar(){
+    this.rota.navigate(['/home/Modelos']);
   }
 }

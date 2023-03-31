@@ -28,7 +28,7 @@
       "id": 3
     },
     {
-      "nome": "Moda Ativa",
+      "nome": "Moda Ativa 2",
       "responsavel": "Carlos",
       "estacao": "Outono",
       "marca": "Umbro",
@@ -37,9 +37,9 @@
       "id": 5
     },
     {
-      "nome": "Coleção Inverno",
-      "responsavel": "Alisson",
-      "estacao": "Inverno",
+      "nome": "Teste",
+      "responsavel": "Peterson",
+      "estacao": "Verão",
       "marca": "Nike",
       "orcamento": 50000,
       "anoLancamento": 2021,
@@ -76,22 +76,22 @@
       "estampa": "true"
     },
     {
-      "id": 4,
-      "nome": "Bíquine Verão",
+      "nome": "Bíquine Verão ",
       "tipoModelo": "Bíquini",
       "colecao": 1,
       "responsavel": "Jocelma",
       "bordado": "true",
-      "estampa": "true"
+      "estampa": "true",
+      "id": 4
     },
     {
-      "id": 5,
-      "nome": "Camisa Social",
+      "nome": "Camisa Social ",
       "tipoModelo": "Camisa",
       "colecao": 1,
       "responsavel": "Peterson Wiggers",
       "bordado": "true",
-      "estampa": "true"
+      "estampa": "true",
+      "id": 5
     },
     {
       "nome": "Calça Larga",
@@ -119,15 +119,6 @@
       "bordado": "true",
       "estampa": "false",
       "id": 9
-    },
-    {
-      "nome": "Teste",
-      "tipoModelo": "Camisa",
-      "colecao": 1,
-      "responsavel": "Peterson",
-      "bordado": "false",
-      "estampa": "false",
-      "id": 10
     }
   ]
 }

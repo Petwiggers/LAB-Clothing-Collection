@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Colecoes } from 'src/app/interfaces/colecoes';
 import { Modelos } from 'src/app/interfaces/modelos';
 import { ColecoesService } from 'src/app/servicos/colecoes.service';
@@ -17,7 +17,11 @@ export class EditarModelosComponent {
   modelo!: Modelos[]|undefined;
   modeloId!: string|null;
 
-  constructor(private httpModelos: ModelosService, private httpColecoes: ColecoesService,private rotaAtiva: ActivatedRoute){}
+  constructor(
+    private httpModelos: ModelosService, 
+    private httpColecoes: ColecoesService,
+    private rotaAtiva: ActivatedRoute,
+    private rota:Router){}
   async ngOnInit() {
     this.modeloId = this.rotaAtiva.snapshot.paramMap.get('id');
     this.colecoes = await this.httpColecoes.getColecoes().toPromise();
@@ -36,17 +40,20 @@ export class EditarModelosComponent {
     });
   }
 
-  OnSubmit(){
+ async OnSubmit(){
     if (!this.formulario.valid) {
       alert('Ouve algum erro de validação nos dados de seu Formulário !')
       return
     }
-    this.httpModelos.putModelo(this.formulario.value,this.modeloId).toPromise();
-    // console.log(this.formulario.value);
-    
+   await this.httpModelos.putModelo(this.formulario.value,this.modeloId).toPromise();
   }
 
-  excluir(){
-    this.httpModelos.deleteModelos(this.modeloId).toPromise();
+  async excluir(){
+    await this.httpModelos.deleteModelos(this.modeloId).toPromise();
+    this.rota.navigate(['/home/Modelos']);
+  }
+
+  cancelar(){
+    this.rota.navigate(['/home/Modelos']);
   }
 }

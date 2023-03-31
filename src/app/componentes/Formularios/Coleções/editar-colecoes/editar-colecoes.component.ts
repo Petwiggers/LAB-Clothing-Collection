@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Colecoes } from 'src/app/interfaces/colecoes';
 import { ColecoesService } from 'src/app/servicos/colecoes.service';
 import { ModelosService } from 'src/app/servicos/modelos.service';
@@ -16,7 +16,11 @@ export class EditarColecoesComponent implements OnInit{
   formulario!: FormGroup;
   modelos!: any;
 
-  constructor(private rotaAtiva: ActivatedRoute, private httpColecoes: ColecoesService,private httpModelos: ModelosService){}
+  constructor(
+    private rotaAtiva: ActivatedRoute, 
+    private httpColecoes: ColecoesService,
+    private httpModelos: ModelosService,
+    private rota: Router){}
 
   async ngOnInit(){
     this.colecaoId = this.rotaAtiva.snapshot.paramMap.get('id');
@@ -36,15 +40,16 @@ export class EditarColecoesComponent implements OnInit{
     });
   }
 
-  OnSubmit(){
+  async OnSubmit(){
     if (!this.formulario.valid) {
       alert('Ouve algum erro de validação nos dados de seu Formulário !')
       return
     }
-    this.httpColecoes.putColecao(this.formulario.value,this.colecaoId).toPromise();
+    await this.httpColecoes.putColecao(this.formulario.value,this.colecaoId).toPromise();
+    this.rota.navigate(['/home/Colecoes'])
   }
 
-  excluir(){
+  async excluir(){
     const modelos = [];
     if (this.colecaoId) {
       const IdColecao = parseInt(this.colecaoId);
@@ -58,7 +63,12 @@ export class EditarColecoesComponent implements OnInit{
         this.httpModelos.deleteModelos(modelos[i].id).toPromise();
       }
     }
-    this.httpColecoes.deleteColecao(this.colecaoId).toPromise();
+    await this.httpColecoes.deleteColecao(this.colecaoId).toPromise();
+    this.rota.navigate(['/home/Colecoes']);
     }
+  }
+
+  cancelar(){
+    this.rota.navigate(['/home/Colecoes']);
   }
 }

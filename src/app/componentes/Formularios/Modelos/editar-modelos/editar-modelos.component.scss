@@ -18,11 +18,6 @@ form{
   width: 350px;
 }
 
-.btn-primary{
-  width: 100px;
-  margin-top: 20px;
-}
-
 p{
   margin-top: 10px;
   cursor: pointer;
@@ -38,30 +33,12 @@ p{
 #butons{
   margin-top: 10px;
   display: flex;
-  justify-content: end;
+  justify-content:right;
   gap: 20px;
-}
-
-.btn-secondary{
-  background-color: blue;
-}
-
-#botaoSalvar{
-  background-color: #0073CF;
-}
-#botaoCancelar{
-  background-color: #EBEBEB;
-  color: #A098AE;
-  border: none;
 }
 
 .butons{
   width: 180px;
-}
-
-.inputRadio{
-  font-size: 14px;
-  border: none !important;
 }
 
 .form-select{
@@ -81,4 +58,11 @@ p{
   background-color: red;
   border: none;
   margin-right: 470px;
+}
+.form-control-sem-borda{
+  border: none !important;
+}
+
+.form-control-semBorda{
+  border: none;
 }

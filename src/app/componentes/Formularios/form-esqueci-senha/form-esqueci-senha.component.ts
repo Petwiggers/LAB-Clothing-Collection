@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-esqueci-senha',
@@ -9,6 +10,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class FormEsqueciSenhaComponent {
   formulario!: FormGroup; 
   submit: boolean = false;
+
+  constructor(private rota: Router){}
 
   ngOnInit(): void {
     this.criarFormulario();
@@ -25,5 +28,9 @@ export class FormEsqueciSenhaComponent {
       return
     }
     this.submit = true;
+  }
+
+  voltarLogin(){
+    this.rota.navigate(['/Login'])
   }
 }

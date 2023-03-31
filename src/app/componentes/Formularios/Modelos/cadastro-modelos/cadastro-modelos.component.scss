@@ -38,7 +38,7 @@ p{
 #butons{
   margin-top: 10px;
   display: flex;
-  justify-content: end;
+  justify-content: right;
   gap: 20px;
 }
 
@@ -59,12 +59,11 @@ p{
   width: 180px;
 }
 
-.inputRadio{
-  font-size: 14px;
-  border: none !important;
-}
-
 .form-select{
   height: 58px;
   width: 350px;
+}
+
+.form-control-semBorda{
+  border: none;
 }

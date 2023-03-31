@@ -101,6 +101,24 @@
       "responsavel": "Yan",
       "bordado": true,
       "estampa": true
+    },
+    {
+      "nome": "Calça Larga",
+      "tipoModelo": "Bíquini",
+      "colecao": 3,
+      "responsavel": "Peterson",
+      "bordado": "Sim",
+      "estampa": "Não",
+      "id": 7
+    },
+    {
+      "nome": "Tênis de Corrida",
+      "tipoModelo": "Calçados",
+      "colecao": 2,
+      "responsavel": "Peterson",
+      "bordado": "Tênis de Corrida",
+      "estampa": "Tênis de Corrida",
+      "id": 8
     }
   ]
 }

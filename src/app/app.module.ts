@@ -27,6 +27,8 @@ import { PaginaModelosComponent } from './pages/Modelos/pagina-modelos/pagina-mo
 import { CadastroColecoesComponent } from './componentes/Formularios/Coleções/cadastro-colecoes/cadastro-colecoes.component';
 import { EditarColecoesComponent } from './componentes/Formularios/Coleções/editar-colecoes/editar-colecoes.component';
 import { TabelaModelosComponent } from './componentes/Tabelas/tabela-modelos/tabela-modelos.component';
+import { PaginaCadastroModelosComponent } from './pages/Modelos/pagina-cadastro-modelos/pagina-cadastro-modelos.component';
+import { CadastroModelosComponent } from './componentes/Formularios/Modelos/cadastro-modelos/cadastro-modelos.component';
 
 
 @NgModule({
@@ -54,7 +56,9 @@ import { TabelaModelosComponent } from './componentes/Tabelas/tabela-modelos/tab
     EditarColecoesComponent,
     PageEditarColecoesComponent,
     PaginaModelosComponent,
-    TabelaModelosComponent
+    TabelaModelosComponent,
+    PaginaCadastroModelosComponent,
+    CadastroModelosComponent
   ],
   imports: [
     BrowserModule,

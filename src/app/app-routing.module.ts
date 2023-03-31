@@ -9,6 +9,7 @@ import { PaginaColecoesComponent } from './pages/Coleções/pagina-colecoes/pagi
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { EsqueciSenhaComponent } from './pages/Esqueci-Senha/esqueci-senha.component';
 import { LoginComponent } from './pages/Login/login.component';
+import { PaginaCadastroModelosComponent } from './pages/Modelos/pagina-cadastro-modelos/pagina-cadastro-modelos.component';
 import { PaginaModelosComponent } from './pages/Modelos/pagina-modelos/pagina-modelos.component';
 import { GuardHomeGuard } from './servicos/guard-home.guard';
 
@@ -25,10 +26,9 @@ const routes: Routes = [
     {path:'Colecoes',component: PaginaColecoesComponent},
     {path:'Cadastro-Colecoes',component: PageCadastroColecoesComponent},
     {path:'Editar-Colecoes/:id',component:PageEditarColecoesComponent},
-    {path:'Modelos', component:PaginaModelosComponent}
+    {path:'Modelos', component:PaginaModelosComponent},
+    {path:'Cadastro-Modelos', component: PaginaCadastroModelosComponent}
   ]}
-
-
 ];
 
 @NgModule({

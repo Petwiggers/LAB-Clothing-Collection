@@ -28,10 +28,6 @@ export class TabelaModelosComponent implements OnInit{
     if (this.modelos) {
       for(let i = 0; i< this.modelos.length; i++){
         for (let t = 0; t < this.colecoes.length; t++) {
-          console.log('Modelo');
-          console.log(this.modelos[i].colecao);
-          console.log('Coleção');
-          console.log(this.colecoes[t].id);
           if (this.colecoes[t].id === this.modelos[i].colecao) {
             const objeto = {
               ...this.modelos[i],

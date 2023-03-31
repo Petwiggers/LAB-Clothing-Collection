@@ -8,8 +8,8 @@
         <th scope="col">Coleção</th>
       </tr>
     </thead>
-    <tbody>
-      <tr *ngFor="let modelo of modelosModificadas">
+    <tbody *ngFor="let modelo of modelosModificadas">
+      <tr>
         <th>0{{modelo.id}}</th>
         <td>{{modelo.nome}}</td>
         <td>{{modelo.responsavel}}</td>

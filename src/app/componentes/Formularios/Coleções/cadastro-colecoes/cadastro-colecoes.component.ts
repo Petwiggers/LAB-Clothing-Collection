@@ -38,8 +38,6 @@ export class CadastroColecoesComponent implements OnInit{
 
   cadastrarColecao(){
     this.http.postColecao(this.formulario.value).toPromise();
-    console.log("fez a requizição");
-    
   }
 
   retornarListagem(){
